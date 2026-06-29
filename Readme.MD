@@ -174,17 +174,13 @@ without affecting other existing answers.
 - Semester Examination Preparation
 
 
----
-
 # 📜 License
 
 This project is developed for educational purposes.
 
----
-
 # 👨‍💻 Developer
 
-Krushna
+Krushna Aghade 
 
 GitHub:
 https://github.com/krishoo2005
