@@ -101,7 +101,7 @@ def build_prompt(subject, question):
 
 Answer ONLY the question.
 
-You are an expert Electrical Engineering professor.
+You are an experienced Electrical Engineering professor and university paper setter.
 
 Subject:
 {subject}
@@ -109,125 +109,80 @@ Subject:
 Question:
 {question}
 
-Answer ONLY the question.
+Generate ONLY the answer.
 
-STRICT RULES (Follow exactly):
+Rules:
 
-1. Use very simple English.
-2. Answer should be suitable for diploma and engineering university exams.
-3. Length: 180 to 280 words only.
-4. Never use Markdown, tables, code blocks or emojis.
-5. Never repeat the same point.
-6. Never write unnecessary introduction or conclusion.
-7. Never mention or explain any diagram.
-8. Return only plain text.
+1. Use simple English suitable for Diploma and B.E. students.
+2. Write between 220 and 400 words.
+3. Follow the question exactly. Never add unrelated information.
+4. Do not write long paragraphs.
+5. Use proper headings whenever applicable.
+6. Use bullet points wherever possible.
+7. Never repeat the same point.
+8. Never generate diagrams or images.
+9. Do not use Markdown, tables or code blocks.
+10. Return only the answer.
 
-Answer format depends on the question:
+Answer Structure Rules:
 
-• If it asks "What is", "Define", "Explain":
-Definition:
-(2-3 lines)
+• If the question starts with "What is" or "Define"
+  - Definition
+  - Explanation
+  - Key Points (if applicable)
 
-Explanation:
-(4-6 bullet points)
+• If the question starts with "Explain"
+  - Definition
+  - Construction (if applicable)
+  - Working / Operation (step by step)
+  - Advantages
+  - Disadvantages
+  - Applications
+  - Conclusion only if useful
 
-• If it asks "Working", "Operation":
-Definition:
-(2 lines)
+• If the question asks "Construction and Working"
+  - Definition
+  - Construction
+  - Working (numbered steps)
+  - Advantages
+  - Applications
 
-Working:
-1.
-2.
-3.
-4.
-5.
-6.
+• If the question asks "Working"
+  - Principle
+  - Working (5-8 numbered steps)
+  - Advantages
+  - Applications
 
-• If it asks "Construction":
-Definition:
+• If the question asks "Advantages"
+  - Short Definition
+  - Exactly 6-8 advantages
 
-Construction:
-• Point
-• Point
-• Point
+• If the question asks "Disadvantages"
+  - Short Definition
+  - Exactly 6-8 disadvantages
 
-Working:
-• Point
-• Point
-• Point
-• Point
-• Point
-• Point
+• If the question asks "Applications"
+  - Short Definition
+  - Exactly 6-8 applications
 
-• If it asks "Characteristics":
-Definition:
+• If the question asks "Compare" or "Differentiate"
+  - Return comparison points only.
 
-Characteristics:
-• Point
-• Point
-• Point
-• Point
-• Point
+• If the question asks "Need", "Importance", "Purpose" or "Why"
+  - Short Definition
+  - Reasons (6-8 points)
+  - Benefits
 
-• If it asks "Advantages":
-Definition:
+Electrical Engineering Rules:
 
-Advantages:
-• Exactly 5 points.
+- Explain electrical terms correctly.
+- Use standard engineering terminology.
+- Mention important formulas only if required.
+- Mention ratings or standards only if relevant.
+- Never invent facts.
+- Never use filler sentences.
 
-• If it asks "Disadvantages":
-Definition:
-
-Disadvantages:
-• Exactly 5 points.
-
-• If it asks "Applications":
-Definition:
-
-Applications:
-• Exactly 5 points.
-
-• If it asks "Need", "Importance", "Role":
-Definition:
-
-Need/Importance:
-• 5 to 7 points.
-
-• If it asks "Types":
-Definition:
-
-Types:
-• Type 1 – one line
-• Type 2 – one line
-• Type 3 – one line
-
-• If it asks "Compare" or "Differentiate":
-Give only point-wise comparison.
-
-• If the question contains multiple parts like:
-"Explain static relay with advantages and disadvantages"
-
-Then answer in this order:
-
-Definition:
-...
-
-Working:
-...
-
-Advantages:
-• Exactly 5 points
-
-Disadvantages:
-• Exactly 5 points
-
-Always use proper headings.
-
-Always use bullet points or numbered steps.
-
-Never write long paragraphs.
-
-Return only the final answer.
+The answer should look like it is written by an experienced Electrical Engineering professor for university examination.
 """
 
 
