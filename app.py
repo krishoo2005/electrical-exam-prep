@@ -4,7 +4,9 @@
 # PART 1
 # ==================================================
 
+from click import prompt
 from flask import Flask, render_template, request, jsonify
+from openai import OpenAI
 
 import os
 import json
@@ -28,7 +30,6 @@ load_dotenv()
 genai.configure(
 
     api_key=os.getenv("GEMINI_API_KEY")
-
 )
 
 model = genai.GenerativeModel(
@@ -36,7 +37,19 @@ model = genai.GenerativeModel(
     "gemini-2.5-flash"
 
 )
+# ----------------------------
+# Groq API
+# ----------------------------
 
+from openai import OpenAI
+
+client = OpenAI(
+
+    api_key=os.getenv("GROQ_API_KEY"),
+
+    base_url="https://api.groq.com/openai/v1"
+
+)
 
 # ----------------------------
 # Flask
@@ -266,32 +279,58 @@ Strict Rules:
 
     try:
 
+    # First try Gemini
         response = model.generate_content(prompt)
 
         answer = response.text
 
         return jsonify({
-
-            "answer": answer
-
-        })
+        "answer": answer
+    })
 
 
     except Exception as e:
 
-        print(e)
+        print("Gemini Error:", e)
 
-        error = str(e)
+        error = str(e).lower()
 
-        if "quota" in error.lower() or "429" in error:
+    # If Gemini quota finished, switch to Groq
+        if "quota" in error or "429" in error or "resource_exhausted" in error:
 
-            return jsonify({
-                "error": "⚠ Daily AI limit reached. Please try again tomorrow."
-            }), 429
+            try:
 
-        return jsonify({
-            "error": "⚠ AI service is temporarily unavailable. Please try again later."
-        }), 500
+                response = client.chat.completions.create(
+
+                model="llama-3.3-70b-versatile",
+
+                temperature=0.2,
+
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ]
+            )
+
+                answer = response.choices[0].message.content
+
+                return jsonify({
+                "answer": answer
+            })
+
+            except Exception as groq_error:
+
+                print("Groq Error:", groq_error)
+
+                return jsonify({
+                "error": "⚠ Both Gemini and Groq are unavailable."
+            }), 500
+
+    return jsonify({
+        "error": "⚠ AI service is temporarily unavailable."
+    }), 500
     # ==================================================
 # PART 4
 # Health Check + Error Pages + Run
