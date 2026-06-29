@@ -8,58 +8,62 @@
             "questions": [
                 {
                     "id": "emd_1_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
+                    "question": "What are the brief the study of magnetic, electric, Dielectric material?",
+                    "frequency": 3,
+                    "exams": [
+                        "summer2025",
+                        "summer2022",
+                        "winter2023"
+                    ],
+                    "answer": "Definition: \nThe study of magnetic, electric, and dielectric materials is a crucial part of electrical machine design. It involves understanding the properties and behavior of these materials under different conditions.\n\nExplanation:\n* Magnetic materials are used in electrical machines to provide a path for magnetic flux, with properties like permeability and hysteresis.\n* Electric materials, such as conductors and insulators, are used to carry current and prevent electrical discharge.\n* Dielectric materials are used in capacitors and other electrical components to store electrical energy.\n* The study of these materials includes understanding their properties, such as conductivity, permeability, and permittivity.\n* It also involves analyzing how these materials respond to different environmental conditions, like temperature and humidity.\n* The selection of suitable materials is critical in the design of electrical machines, as it affects their performance, efficiency, and reliability."
                 },
                 {
                     "id": "emd_1_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain in brief the various limitations in design of electrical machines?",
+                    "frequency": 5,
+                    "exams": ["summer2022","summer2024","winter2023","winter2024","summer supply 2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_1_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Describe the Nameplate of Rotating machines as per standards.?",
+                    "frequency": 1,
+                    "exams": ["summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "emd_1_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss the Insulating materials class based on thermal consideration.",
+                    "frequency": 2,
+                    "exams": ["summer2024","winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "emd_1_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain the key principles of design. How do these principles Impact cises experience & overall success of a design? or llustrate in brief principles of elee machine design with a Neat schematic.(",
+                    "frequency": 2,
+                    "exams": ["winter2023","summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "emd_1_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss briefly about electrical properties of Insulating materials?",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_1_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain factors affecting design of machine in detail.",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_1_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "What is the importance & purpose of specification in design & manufacturing of electrical machines? State the standard specification of transformers.(",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 }
             ]
@@ -69,58 +73,58 @@
             "questions": [
                 {
                     "id": "emd_2_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain in detail the design of heating coils",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_2_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": " Explain the design of a choke coil. ",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_2_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": ". Give the design procedure for choke coil design with relevant formulas. ",
+                    "frequency": 2,
+                    "exams": ["summer2024","winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "emd_2_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": ".Explain the design procedure of a starter used in a DC shunt motor.",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_2_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": ".Explain the design procedure of an electromagnet.",
+                    "frequency": 1,
+                    "exams": ["winter2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_2_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain the fundamental differences in the design principles for AC & DC machines. How do these differences impact factors like the magnetic circuit, windings, and commutation? ",
+                    "frequency": 1,
+                    "exams": ["winter2023"],
                     "answer": ""
                 },
                 {
                     "id": "emd_2_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "What are the primary differences between AC & DC windings in terms of design considerations and their applications in electrical apparatus? [",
+                    "frequency": 1,
+                    "exams": ["winter2023"],
                     "answer": ""
                 },
                 {
                     "id": "emd_2_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Show the simplex lap-wound armature with a winding table of a 4-pole generator with 24 conductors",
+                    "frequency": 2,
+                    "exams": ["summer2024","winter2024"],
                     "answer": ""
                 }
             ]
@@ -130,58 +134,58 @@
             "questions": [
                 {
                     "id": "emd_3_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": ")What is the concentric winding & what are the types? ",
+                    "frequency": 1,
+                    "exams": ["summer supply 2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_3_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "What is the Role of equalizer connections? why do we dispense equalizer connection in case of wave winding? ",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_3_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Model an output equation for the 3-phase Induction motor. ",
+                    "frequency": 1,
+                    "exams": ["summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "emd_3_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": ")What is the effect of chording & distributing the winding in slots, in the emf generated.",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_3_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": ")Illustrate the design procedure of stator of squirrel cage Induction machine with the Help of formulae. ",
+                    "frequency": 1,
+                    "exams": ["winter2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_3_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Illustrate the procedure of computation of losses in rotor bars & end ring of Induction machine. ",
+                    "frequency": 2,
+                    "exams": ["winter2024", "summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "emd_3_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "What are the primary design considerations for the stator of an Induction motor & How do they impact motor performance? [",
+                    "frequency": 1,
+                    "exams": ["winter2023"],
                     "answer": ""
                 },
                 {
                     "id": "emd_3_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Define specific magnetic Loadings & specific electric Loadings. Derive the output eqn of an Induction motor.",
+                    "frequency": 1,
+                    "exams": ["summer2025"],
                     "answer": ""
                 }
             ]
@@ -191,58 +195,58 @@
             "questions": [
                 {
                     "id": "emd_4_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "What are the different modes of heat dissipation in electric machines? What is thermal resistance & what is its unit?",
+                    "frequency": 1,
+                    "exams": ["summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "emd_4_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain and Compare the distribution & power transformers? ",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_4_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Show various types of ventilating systems in accordance with the provision of cooling duty & explain how the air passes over the heated part of the machine.",
+                    "frequency": 2,
+                    "exams": ["winter2024", "summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "emd_4_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": ")What are sources of heat generation in a rotating electrical machine? ",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_4_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Write a short note on Hydrogen cooling.",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_4_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain selection of length of air gap & explain factors affecting length of air gap, design of Rotor. [",
+                    "frequency": 1,
+                    "exams": ["winter2023"],
                     "answer": ""
                 },
                 {
                     "id": "emd_4_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss the impact of skewed rotor slots on the operation & performance of squirrel cage rotors in Induction motors. [",
+                    "frequency": 1,
+                    "exams": ["winter2023"],
                     "answer": ""
                 },
                 {
                     "id": "emd_4_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "the impact of skewed rotor slots on the operation & performance of squirrel cage rotors in Induction motors. ",
+                    "frequency": 1,
+                    "exams": ["summer2025"],
                     "answer": ""
                 }
             ]
@@ -252,58 +256,51 @@
             "questions": [
                 {
                     "id": "emd_5_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Give the advantages of computer-aided designing of transformers",
+                    "frequency": 1,
+                    "exams": ["summer2022"],
                     "answer": ""
                 },
                 {
                     "id": "emd_5_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Illustrate the types of tests performed on transformers (x'mers) as per the Standards for estimation of leakage reactance, Resistance of winding, No Load current, & losses. ",
+                    "frequency": 2,
+                    "exams": ["summer2024", "winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "emd_5_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Illustrate the step-by-step design procedure for the magnetic frame of a three-phase power transformer (X'mer) with relevant formulae.",
+                    "frequency": 2,
+                    "exams": ["winter2024","winter supply 2024"],
                     "answer": ""
                 },
                 {
                     "id": "emd_5_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss the significance of temperature rise limits in electrical machines & their impact on machine performance & longevity. ",
+                    "frequency": 1,
+                    "exams": ["winter2023"],
                     "answer": ""
                 },
                 {
                     "id": "emd_5_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain how the cooling time constant is calculated & its importance in predicting the rate of temperature decrease in an electrical machine.?",
+                    "frequency": 1,
+                    "exams": ["winter2023"],
                     "answer": ""
                 },
                 {
                     "id": "emd_5_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss the factors that influence the heating time constant & its relevance in different types of electrical machines.? ",
+                    "frequency": 1,
+                    "exams": ["winter2023"],
                     "answer": ""
                 },
                 {
                     "id": "emd_5_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
-                },
-                {
-                    "id": "emd_5_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain in detail the mechanical forces that are generated in a transformer (x'mer) during short-circuit conditions.?",
+                    "frequency": 1,
+                    "exams": ["winter2023"],
                     "answer": ""
                 }
             ]

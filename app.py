@@ -4,7 +4,6 @@
 # PART 1
 # ==================================================
 
-from click import prompt
 from flask import Flask, render_template, request, jsonify
 from openai import OpenAI
 
@@ -41,7 +40,6 @@ model = genai.GenerativeModel(
 # Groq API
 # ----------------------------
 
-from openai import OpenAI
 
 client = OpenAI(
 
