@@ -39,6 +39,8 @@ gtag('config', 'G-8T35TNZ7LZ');
 </head>
 
 <body>
+ 
+    
 
 <!-- ================= PROGRESS BAR ================= -->
 
@@ -87,6 +89,106 @@ gtag('config', 'G-8T35TNZ7LZ');
     </div>
 
 </section>
+
+
+
+
+<body>
+ 
+    <!-- ================= RESOURCES ================= -->
+
+<section class="resources-section">
+
+    <h2>📚 Study Resources</h2>
+
+    <div class="resources-grid">
+
+        <!-- Notes -->
+
+        {% if data.notes_url %}
+
+        <a href="{{ data.notes_url }}"
+           target="_blank"
+           class="resource-card">
+
+            <div class="resource-icon">
+                📘
+            </div>
+
+            <h3>Complete Notes</h3>
+
+            <p>
+                Download complete subject notes.
+            </p>
+
+        </a>
+
+        {% else %}
+
+        <div class="resource-card disabled">
+
+            <div class="resource-icon">
+                📘
+            </div>
+
+            <h3>Complete Notes</h3>
+
+            <p>
+                📘Complete Notes
+
+                Notes will be available soon.
+
+                Stay tuned for updates.
+            </p>
+
+        </div>
+
+        {% endif %}
+
+
+
+        <!-- Previous Papers -->
+
+        {% if data.papers_url %}
+
+        <a href="{{ data.papers_url }}"
+           target="_blank"
+           class="resource-card">
+
+            <div class="resource-icon">
+                📄
+            </div>
+
+            <h3>All Previous Year Papers</h3>
+
+            <p>
+                Download all previous papers.
+            </p>
+
+        </a>
+
+        {% else %}
+
+        <div class="resource-card disabled">
+
+            <div class="resource-icon">
+                📄
+            </div>
+
+            <h3>All Previous Year Papers</h3>
+
+            <p>
+                Previous year papers will be available soon 📩.
+            </p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</section>
+
 
 <!-- ================= SEARCH ================= -->
 
@@ -563,7 +665,7 @@ onclick="backToTop()"
 
 <h3>
 
-⚡ ExamHub
+⚡Electrical Exam Hub
 
 </h3>
 
