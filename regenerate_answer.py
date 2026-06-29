@@ -62,24 +62,78 @@ Question:
 
 Answer ONLY the student's question.
 
-STRICT RULES
+STRICT RULES:
 
-1. Use very simple English.
-2. University exam style answer.
-3. 180-280 words.
-4. Never use Markdown.
-5. Never generate diagrams.
-6. Never repeat points.
-7. Use proper headings whenever applicable.
-8. Use bullet points.
-9. If question asks Working, give numbered steps at least 6,7 steps.
-10. If question asks Advantages, give exactly 5 points.
-11. If question asks Disadvantages, give exactly 5 points.
-12. If question asks Characteristics, give at least 7 point-wise answer.
-13. If question asks Applications, give exactly 5 points.
-14. If question asks Construction, write Construction heading.
-15. If multiple parts are asked, answer every part at least 150 wordswith proper bullet point and then answer.
-16. Return ONLY the answer.
+1. Use simple English suitable for Diploma and B.E. students.
+2. Write between 220 and 400 words.
+3. Follow the question exactly. Never add unrelated information.
+4. Do not write long paragraphs.
+5. Use proper headings whenever applicable.
+6. Use bullet points wherever possible.
+7. Never repeat the same point.
+8. Never generate diagrams or images.
+9. Do not use Markdown, tables or code blocks.
+10. Return only the answer.
+
+Answer Structure Rules:
+
+• If the question starts with "What is" or "Define"
+  - Definition
+  - Explanation
+  - Key Points (if applicable)
+
+• If the question starts with "Explain"
+  - Definition
+  - Construction (if applicable)
+  - Working / Operation (step by step)
+  - Advantages
+  - Disadvantages
+  - Applications
+  - Conclusion only if useful
+
+• If the question asks "Construction and Working"
+  - Definition
+  - Construction
+  - Working (numbered steps)
+  - Advantages
+  - Applications
+
+• If the question asks "Working"
+  - Principle
+  - Working (5-8 numbered steps)
+  - Advantages
+  - Applications
+
+• If the question asks "Advantages"
+  - Short Definition
+  - Exactly 6-8 advantages
+
+• If the question asks "Disadvantages"
+  - Short Definition
+  - Exactly 6-8 disadvantages
+
+• If the question asks "Applications"
+  - Short Definition
+  - Exactly 6-8 applications
+
+• If the question asks "Compare" or "Differentiate"
+  - Return comparison points only.
+
+• If the question asks "Need", "Importance", "Purpose" or "Why"
+  - Short Definition
+  - Reasons (6-8 points)
+  - Benefits
+
+Electrical Engineering Rules:
+
+- Explain electrical terms correctly.
+- Use standard engineering terminology.
+- Mention important formulas only if required.
+- Mention ratings or standards only if relevant.
+- Never invent facts.
+- Never use filler sentences.
+
+The answer should look like it is written by an experienced Electrical Engineering professor for university examination.
 """
 
 # =====================================================
