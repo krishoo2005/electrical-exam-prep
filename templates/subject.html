@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8T35TNZ7LZ"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-8T35TNZ7LZ');
+</script>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ data.name }} | ExamHub</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= PROGRESS BAR ================= -->
+
+<div id="progressBar"></div>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        ⚡ ExamHub
+
+    </div>
+
+    <nav>
+
+        <a href="/">🏠 Home</a>
+
+        <a href="/">📚 Subjects</a>
+
+        <a href="#" onclick="toggleAI()">🤖 Ask AI</a>
+
+    </nav>
+
+</header>
+
+<!-- ================= SUBJECT HERO ================= -->
+
+<section class="subject-hero">
+
+    <div class="hero-content">
+
+        <h1>
+
+            {{ data.name }}
+
+        </h1>
+
+        <p>
+
+            Previous Year Questions • AI Powered • Most Repeated First
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+    <input
+
+        id="searchInput"
+
+        class="search-box"
+
+        type="text"
+
+        placeholder="🔍 Search Questions..."
+
+        onkeyup="searchQuestions()"
+
+    >
+
+</section>
+
+<!-- ================= TABS ================= -->
+
+<section class="tabs">
+
+    <button
+
+        class="tab-btn active"
+
+        onclick="switchTab('important',this)">
+
+        ⭐ Important
+
+    </button>
+
+    <button
+
+        class="tab-btn"
+
+        onclick="switchTab('all',this)">
+
+        📚 All Questions
+
+    </button>
+
+</section>
+
+<!-- ================= UNIT FILTER ================= -->
+
+<section
+
+    id="unitFilter"
+
+    class="unit-filter"
+
+    style="display:none;">
+
+    <button
+
+        class="unit-btn active"
+
+        onclick="filterUnit('all',this)">
+
+        All
+
+    </button>
+
+    {% for unit in data.units %}
+
+    <button
+
+        class="unit-btn"
+
+        onclick="filterUnit('{{ loop.index }}',this)">
+
+        Unit {{ loop.index }}
+
+    </button>
+
+    {% endfor %}
+
+</section>
+
+<!-- ================= IMPORTANT QUESTIONS ================= -->
+
+<div
+
+    id="tab-important"
+
+    class="questions-container">
+
+{% for q in important %}
+
+<div
+
+    class="question-card"
+    onclick="toggleCard(this)">
+
+    <div class="question-top" >
+
+        <h3>
+
+            {{ q.question }}
+
+        </h3>
+
+        <div class="badge-frequency">
+
+            ⭐ {{ q.frequency }}
+
+        </div>
+
+    </div>
+
+    <div class="exam-tags">
+
+        {% for exam in q.exams %}
+
+        <span>{{ exam }}</span>
+
+        {% endfor %}
+
+    </div>
+
+   <div 
+   class="answer"
+   id="ans-{{ q.id }}">
+
+   {% if q.answer and q.answer|trim %}
+
+   {{ q.answer }}
+
+   {% else %}
+
+   <div class="coming-soon-answer">
+        <h4>📚 Answer Coming Soon</h4>
+        <p>
+            This answer is currently being prepared by our team.
+            <br>
+            High-quality exam-oriented notes will be available soon.
+        </p>
+        <span> Thank you for your patience😊.</span>
+    </div>
+
+    {% endif %}
+
+    </div>
+
+
+    <div class="card-buttons">
+
+        <button
+
+            class="btn-copy"
+
+            onclick="copyAnswer(event,'{{ q.id }}')">
+
+            📋 Copy
+
+        </button>
+
+        <button
+
+            class="btn-ai"
+
+            onclick="askAI(event,'{{ q.question }}')">
+
+            🤖 Explain
+
+        </button>
+
+        <button
+
+            class="bookmark-btn"
+
+            data-id="{{ q.id }}"
+
+            onclick="event.stopPropagation();bookmarkQuestion('{{ q.id }}',this);">
+
+            🤍
+
+        </button>
+
+    </div>
+
+</div>
+{% endfor %}
+
+</div>
+
+<!-- ================= ALL QUESTIONS ================= -->
+
+<div
+
+id="tab-all"
+
+class="questions-container"
+
+style="display:none;"
+
+>
+
+{% for unit in data.units %}
+
+<section
+
+class="unit-section"
+
+data-unit="{{ loop.index }}"
+
+>
+
+<div class="unit-heading">
+
+<h2>
+
+📘 {{ unit.title }}
+
+</h2>
+
+</div>
+
+{% for q in unit.questions %}
+
+<div
+
+class="question-card"
+onclick="toggleCard(this)"
+>
+
+<div
+class="question-top"
+>
+
+<h3>
+
+{{ q.question }}
+
+</h3>
+
+<div class="badge-frequency">
+
+⭐ {{ q.frequency }}
+
+</div>
+
+</div>
+
+<div class="exam-tags">
+
+{% for exam in q.exams %}
+
+<span>
+
+{{ exam }}
+
+</span>
+
+{% endfor %}
+
+</div>
+
+<div
+class="answer"
+id="ans-{{ q.id }}">
+
+{% if q.answer and q.answer|trim %}
+
+{{ q.answer }}
+
+{% else %}
+
+<div class="coming-soon-answer">
+    <h4>📚 Question and Answer Coming Soon</h4>
+    <p>
+        This answer is currently being prepared by our team.
+        <br>
+        High-quality exam-oriented notes will be available soon.
+    </p>
+    <span> Thank you for your patience😊.</span>
+</div>
+
+{% endif %}
+
+</div>
+
+<div class="card-buttons">
+
+<button
+
+class="btn-copy"
+
+onclick="copyAnswer(event,'{{ q.id }}')"
+
+>
+
+📋 Copy
+
+</button>
+
+<button
+
+class="btn-ai"
+
+onclick="askAI(event,'{{ q.question }}')"
+
+>
+
+🤖 Explain
+
+</button>
+
+<button
+
+class="bookmark-btn"
+
+data-id="{{ q.id }}"
+
+onclick="event.stopPropagation(); bookmarkQuestion('{{ q.id }}',this)"
+
+>
+
+🤍
+
+</button>
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</section>
+
+{% endfor %}
+
+</div>
+
+<!-- ================= FLOATING AI BUTTON ================= -->
+
+<button
+
+id="aiFab"
+
+class="ai-fab"
+
+onclick="toggleAI()"
+
+>
+
+🤖
+
+</button>
+
+<!-- ================= AI CHAT ================= -->
+
+<div
+
+id="aiBox"
+
+class="ai-box"
+
+>
+
+<div class="ai-header">
+
+<div class="ai-title">
+
+🤖 ExamHub AI
+
+</div>
+
+<div>
+
+<button
+
+class="clear-ai"
+
+onclick="clearAIChat()"
+
+>
+
+🗑
+
+</button>
+
+<button
+
+class="close-ai"
+
+onclick="closeAI()"
+
+>
+
+✕
+
+</button>
+
+</div>
+
+</div>
+
+<div
+
+id="aiMessages"
+
+class="ai-messages"
+
+>
+
+<div class="ai-msg bot">
+
+👋 Hello Student
+
+<br><br>
+
+Ask me anything about
+
+<b>{{ data.name }}</b>
+
+</div>
+
+</div>
+
+<div class="ai-input-area">
+
+<input
+
+id="aiInput"
+
+type="text"
+
+placeholder="Ask your doubt..."
+
+>
+
+<button
+
+onclick="sendAI()"
+
+>
+
+Send
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button
+
+id="topBtn"
+
+class="top-btn"
+
+onclick="backToTop()"
+
+>
+
+⬆
+
+</button>
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast"></div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+<h3>
+
+⚡ ExamHub
+
+</h3>
+
+<p>
+
+Made for Electrical Engineering Students
+
+</p>
+
+<p>
+
+Free • No Login • AI Powered
+
+</p>
+
+</footer>
+
+<script>
+
+const SUBJECT_CONTEXT="{{ data.name }}";
+
+</script>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8T35TNZ7LZ"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-8T35TNZ7LZ');
+</script>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ExamHub | 6th Semester Electrical Engineering</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= PROGRESS ================= -->
+
+<div id="progressBar"></div>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Electrical Exam Hub Logo">
+    <span>Electrical Exam Hub</span>
+    </div>
+
+    <nav>
+
+        <a href="/">🏠 Home</a>
+
+        <a href="#subjects">📚 Subjects</a>
+
+        <a href="#features">⭐ Features</a>
+
+        <a href="#" onclick="toggleAI()">🤖 Ask AI</a>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <span class="hero-badge">
+
+            ⚡ Free • No Login • AI Powered
+
+        </span>
+
+        <h1>
+
+            Stop Searching.
+
+            <br>
+
+            Start Studying.
+
+        </h1>
+
+        <p>
+
+            PYQs, Important Questions, AI Explanations,
+            Copy Notes and Smart Revision —
+            all in one place for Electrical Engineering students.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+
+                href="#subjects"
+
+                class="hero-btn hero-primary">
+
+                🚀 Start Learning
+
+            </a>
+
+            <a
+
+                href="#features"
+
+                class="hero-btn hero-secondary">
+
+                ⭐ Explore Features
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img
+
+        src="{{ url_for('static', filename='images/robot.webp') }}"
+
+        alt="ExamHub AI Robot">
+
+    </div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat-card">
+
+        <h2>
+
+            5
+
+        </h2>
+
+        <p>
+
+            Subjects
+
+        </p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>
+
+            200+
+
+        </h2>
+
+        <p>
+
+            Questions
+
+        </p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>
+
+            AI
+
+        </h2>
+
+        <p>
+
+            Powered Help
+
+        </p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>
+
+            FREE
+
+        </h2>
+
+        <p>
+
+            Forever
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= SUBJECTS ================= -->
+
+<section id="subjects" class="subjects-section">
+
+    <div class="section-title">
+
+        <h2>📚 Choose Your Subject</h2>
+
+        <p>
+            Most repeated questions • AI explanation • Unit-wise notes
+        </p>
+
+    </div>
+
+    <div class="subjects-grid">
+
+        {% for subject in subjects %}
+
+        <a href="/subject/{{ subject.code }}" class="subject-card">
+
+            <div class="subject-icon">
+
+                {% if subject.code=="sgp" %}
+                ⚡
+                {% elif subject.code=="cse" %}
+                🎛️
+                {% elif subject.code=="sgt" %}
+                🌐
+                {% elif subject.code=="ppe" %}
+                🏭
+                {% elif subject.code=="emd" %}
+                ⚙️
+                {% endif %}
+
+            </div>
+
+            <h3>
+
+                {{ subject.code|upper }}
+
+            </h3>
+
+            <p>
+
+                {{ subject.name }}
+
+            </p>
+
+            <span class="subject-open">
+
+                Open Subject →
+
+            </span>
+
+        </a>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section id="features" class="features">
+
+    <div class="section-title">
+
+        <h2>⭐ Why Use  Electrical Exam Hub?</h2>
+
+        <p>
+            Everything needed before exams in one place.
+        </p>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📈
+            </div>
+
+            <h3>
+                Most Repeated First
+            </h3>
+
+            <p>
+                Questions are automatically sorted by frequency.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🤖
+            </div>
+
+            <h3>
+                AI Teacher
+            </h3>
+
+            <p>
+                Ask doubts anytime in simple English.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📋
+            </div>
+
+            <h3>
+                Copy Notes
+            </h3>
+
+            <p>
+                Copy any answer with one click.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📱
+            </div>
+
+            <h3>
+                Mobile Friendly
+            </h3>
+
+            <p>
+                Works smoothly on phones, tablets and laptops.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🔥
+            </div>
+
+            <h3>
+                Important Questions
+            </h3>
+
+            <p>
+                Quickly revise questions asked multiple times.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🎯
+            </div>
+
+            <h3>
+                Exam Focused
+            </h3>
+
+            <p>
+                No unnecessary theory. Study exactly what matters.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section">
+
+    <div class="section-title">
+
+        <h2>💬 Need Help?</h2>
+
+        <p>
+
+            Use Electrical Exam Hub AI to understand any question before your exam.
+             or contact us for any issues or suggestions regarding website. Email:krushnaaghade1@gmail.com
+        </p>
+
+    </div>
+
+    <div class="contact-card">
+
+        <h3>
+
+            🤖 Ask Electrical Exam Hub AI
+
+        </h3>
+
+        <p>
+
+            Get simple explanations, examples and exam-oriented answers instantly.
+
+        </p>
+
+        <button
+
+            class="hero-btn hero-primary"
+
+            onclick="toggleAI()">
+
+            Open AI Assistant
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FLOATING AI ================= -->
+
+<button
+
+id="aiFab"
+
+class="ai-fab"
+
+onclick="toggleAI()">
+
+🤖
+
+</button>
+
+
+<!-- ================= AI CHAT ================= -->
+
+<div
+
+id="aiBox"
+
+class="ai-box">
+
+<div class="ai-header">
+
+<div class="ai-title">
+
+🤖 Electrical Exam Hub AI
+
+</div>
+
+<div>
+
+<button
+
+class="clear-ai"
+
+onclick="clearChat()"
+
+title="Clear Chat">
+
+🗑
+
+</button>
+
+<button
+
+class="close-ai"
+
+onclick="closeAI()">
+
+✕
+
+</button>
+
+</div>
+
+</div>
+
+
+<div
+
+id="aiMessages"
+
+class="ai-messages">
+
+<div class="ai-msg bot">
+
+👋 Hello!
+
+<br><br>
+
+Ask me anything about
+
+<b>Electrical Engineering</b>.
+
+</div>
+
+</div>
+
+
+<div class="ai-input-area">
+
+<input
+
+id="aiInput"
+
+type="text"
+
+placeholder="Ask your question...">
+
+<button
+
+onclick="sendAI()">
+
+Send
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast"></div>
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button
+
+id="topBtn"
+
+class="top-btn"
+
+onclick="window.scrollTo({top:0,behavior:'smooth'})">
+
+⬆
+
+</button>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+<h3>
+
+⚡ Electrical Exam Hub
+
+</h3>
+
+<p>
+
+Free Learning Platform for
+
+6th Semester Electrical Engineering Students
+
+</p>
+
+<p>
+
+✔ PYQs
+
+•
+
+✔ AI Teacher
+
+•
+
+✔ Important Questions
+
+•
+
+✔ Copy Notes
+
+</p>
+
+<p>
+
+Made By : Krushna Aghade  3rd Year student  @2026 for  AI powered website contact:7058523994
+</p>
+
+</footer>
+
+
+<!-- ================= SCRIPT ================= -->
+
+<script>
+
+const SUBJECT_CONTEXT="Electrical Engineering";
+
+</script>
+
+<script
+
+src="{{ url_for('static', filename='js/main.js') }}">
+
+</script>
+
+</body>
+
+</html>

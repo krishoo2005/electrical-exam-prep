@@ -1,0 +1,425 @@
+{
+    "code": "SGP",
+    "name": "Switchgear & Protection",
+    "description": "Previous Year Exam Questions",
+    "units": [
+        {
+            "title": "Unit 1",
+            "questions": [
+                {
+                    "id": "sgp_1_1",
+                    "question": "explain principle of working & characteristics of attracted armature relay with neat diagram",
+                    "frequency": 1,
+                    "exams": [
+                        "summer 2022"
+                    ],
+                    "answer": "Definition:\nAn attracted armature relay is an electromagnetic protective relay that operates when the armature is attracted towards the electromagnet due to the magnetic field produced by the current flowing through the relay coil. It is commonly used for overcurrent and earth fault protection in power systems.\n\nWorking/Explanation:\n• The relay consists of a coil, an armature, a spring, and contacts.\n• When the current flows through the coil, it produces a magnetic field.\n• The magnetic field attracts the armature towards the coil.\n• As the armature moves, it closes the contacts, sending a trip signal to the circuit breaker.\n• The spring provides a restraining force to return the armature to its original position when the current falls below the pickup value.\n\nCharacteristics:\n• The operating characteristic is linear, meaning that as the current increases, the operating time decreases.\n• The relay has a definite time characteristic, which means it operates after a fixed time delay once the current exceeds the pickup value.\n• It can be designed for different pickup currents and time delays based on system requirements.\n\nAdvantages:\n• Simple construction and easy to maintain.\n• Reliable operation under normal conditions.\n• Can be used for various protection schemes.\n\nDisadvantages:\n• Limited sensitivity compared to modern relays.\n• Slower operation than electronic relays.\n• Affected by mechanical wear and tear over time.\n\nApplications:\n• Overcurrent protection in distribution systems.\n• Earth fault protection in power systems.\n• Backup protection for transformers and generators."
+                },
+                {
+                    "id": "sgp_1_2",
+                    "question": "explain microprocessor based overcurrent relay with neat diagram",
+                    "frequency": 3,
+                    "exams": [
+                        "winter 2022",
+                        "summer 2022",
+                        "winter supply 2022"
+                    ],
+                    "answer": "Definition:\nA microprocessor-based overcurrent relay is a modern digital protective relay used to protect electrical power systems from overcurrent faults. It continuously monitors the current in the power system with the help of a Current Transformer (CT). The relay converts the current signal into a digital signal, processes it using a microprocessor, and compares it with a preset current value. If the current exceeds the set limit for a specified time, the relay sends a trip signal to the circuit breaker to disconnect the faulty section and protect electrical equipment.\n\nWorking:\n1. The Current Transformer (CT) senses the line current and provides a proportional low-current signal.\n2. The signal conditioning circuit filters and amplifies the signal.\n3. The Analog-to-Digital Converter (ADC) converts the analog signal into a digital signal.\n4. The microprocessor receives the digital signal and calculates the current value.\n5. The calculated current is compared with the preset pickup current stored in memory.\n6. If the current is below the preset value, the relay continues monitoring the system.\n7. If the current exceeds the preset value, the relay starts the preset time delay.\n8. If the fault remains after the delay, the microprocessor generates a trip command.\n9. The output circuit energizes the trip coil of the circuit breaker.\n10. The circuit breaker opens and isolates the faulty section from the healthy power system.\n11. The relay records fault information and displays the operating status.\n\nAdvantages:\n1. Provides high accuracy and reliable protection.\n2. Operates faster than conventional relays.\n3. Protection settings can be easily programmed.\n4. Stores fault records and event history.\n5. Supports communication with SCADA and automation systems.\n\nDisadvantages:\n1. Higher initial cost than electromechanical relays.\n2. Requires a reliable auxiliary power supply.\n3. Programming and configuration are more complex.\n4. Maintenance requires trained personnel.\n5. Electronic components may be affected by severe electrical disturbances.\n\nApplications:\n1. Protection of transmission lines against overcurrent faults.\n2. Protection of distribution feeders in substations.\n3. Protection of power transformers.\n4. Protection of generators and electric motors.\n5. Used in industrial plants and modern power distribution systems."
+                },
+                {
+                    "id": "sgp_1_3",
+                    "question": "what are the different types of distance relays explain impedance relay in detail",
+                    "frequency": 1,
+                    "exams": [
+                        "summer 2022"
+                    ],
+                    "answer": "Definition:\nA distance relay is a protective relay that operates when the impedance between the relay location and the fault point becomes less than a preset value. It is mainly used for the protection of transmission lines because the measured impedance is directly proportional to the distance of the fault.\n\nTypes of Distance Relays:\n• Impedance Relay.\n• Reactance Relay.\n• Mho Relay (Admittance Relay).\n• Offset Mho Relay.\n• Quadrilateral Relay.\n\nImpedance Relay:\nAn impedance relay measures the impedance between the relay location and the fault point. It compares the ratio of voltage to current (Z = V/I) with a preset impedance value. During normal operation, the measured impedance is greater than the relay setting, so the relay does not operate. When a fault occurs, the voltage decreases and the current increases, causing the measured impedance to decrease. If the impedance becomes lower than the preset value, the relay operates and sends a trip signal to the circuit breaker, which disconnects the faulty section from the power system.\n\nCharacteristics:\n• Operates based on the measured impedance.\n• Characteristic is a circle centered at the origin on the R-X diagram.\n• Non-directional relay.\n• Operating region is inside the characteristic circle.\n• Suitable for medium length transmission lines.\n\nAdvantages:\n• Simple construction.\n• Fast operation.\n• Easy to set.\n• Reliable performance.\n• Suitable for transmission line protection.\n\nDisadvantages:\n• Affected by power swings.\n• Does not provide directional protection.\n• Performance is affected by fault resistance.\n• Less suitable for long transmission lines.\n• May operate incorrectly during heavy load conditions.\n\nApplications:\n• Protection of transmission lines.\n• Backup protection of power systems.\n• Protection of medium length transmission lines.\n• Used in substations.\n• Used in high voltage power networks."
+                },
+                {
+                    "id": "sgp_1_4",
+                    "question": "Explain need of protective relay and state qualities of protective relay.",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2022"
+                    ],
+                    "answer": "Definition:\nA protective relay is an automatic device used in a power system to detect abnormal conditions such as faults, overloads, or short circuits. When a fault occurs, the relay sends a trip signal to the circuit breaker to isolate the faulty section and protect the electrical equipment from damage.\n\nNeed of Protective Relay:\n• Detects faults quickly and accurately.\n• Protects electrical equipment from damage.\n• Isolates only the faulty section of the power system.\n• Ensures continuous and reliable power supply.\n• Improves the safety of personnel and equipment.\n• Reduces the duration of faults.\n• Minimizes repair cost and equipment damage.\n• Prevents the spread of faults to healthy sections.\n\nQualities of a Protective Relay:\n• Reliability – It should operate correctly whenever a fault occurs.\n• Selectivity – It should isolate only the faulty section without affecting the healthy part.\n• Sensitivity – It should detect even small faults accurately.\n• Speed – It should operate quickly to reduce equipment damage.\n• Stability – It should remain inactive during normal operating conditions and external faults.\n• Simplicity – It should have a simple design for easy operation and maintenance.\n• Accuracy – It should operate at the correct preset value.\n• Economy – It should provide effective protection at a reasonable cost.\n\nAdvantages:\n• Provides fast fault detection.\n• Protects costly electrical equipment.\n• Improves system reliability.\n• Reduces maintenance and repair cost.\n• Increases the safety of the power system.\n\nApplications:\n• Protection of transmission lines.\n• Protection of transformers.\n• Protection of generators.\n• Protection of motors.\n• Protection of feeders and busbars."
+                },
+                {
+                    "id": "sgp_1_5",
+                    "question": "Explain primary and backup protection.",
+                    "frequency": 3,
+                    "exams": [
+                        "winter 2022",
+                        "summer 2024",
+                        "winter 2024"
+                    ],
+                    "answer": "Definition:\nProtection in a power system is provided to detect faults and disconnect the faulty section quickly. It is divided into primary protection and backup protection. Primary protection acts as the main protection for equipment, while backup protection operates when the primary protection fails.\n\nPrimary Protection:\nPrimary protection is the first line of defense for electrical equipment. It is designed to detect faults in its assigned zone and isolate only the faulty section. It operates quickly, accurately, and selectively to minimize damage and maintain system stability.\n\nBackup Protection:\nBackup protection is an additional protection system that operates only when the primary protection or circuit breaker fails to clear the fault. It ensures that the fault is removed to prevent damage to the power system.\n\nDifference Between Primary and Backup Protection:\n• Primary protection operates first, whereas backup protection operates only if primary protection fails.\n• Primary protection has a faster operating time, whereas backup protection has a time delay.\n• Primary protection protects its own assigned zone, whereas backup protection covers a larger area.\n• Primary protection is more selective, whereas backup protection is less selective.\n• Primary protection is the main protection, whereas backup protection provides additional security.\n\nAdvantages:\n• Ensures reliable fault clearance.\n• Reduces damage to electrical equipment.\n• Improves the stability of the power system.\n• Provides continuous and dependable protection.\n• Increases the safety of personnel and equipment.\n\nApplications:\n• Protection of transmission lines.\n• Protection of transformers.\n• Protection of generators.\n• Protection of motors.\n• Protection of substations and feeders."
+                },
+                {
+                    "id": "sgp_1_6",
+                    "question": "Describe induction disc and induction cup type relay.",
+                    "frequency": 2,
+                    "exams": [
+                        "winter 2022",
+                        "winter 2024"
+                    ],
+                    "answer": "Definition:\nInduction type relays are electromagnetic relays that operate on the principle of electromagnetic induction. They work only on AC supply because induction requires alternating magnetic flux. The two common types are induction disc relay and induction cup relay.\n\nInduction Disc Relay:\nAn induction disc relay consists of an aluminium disc mounted on a spindle between two electromagnets. When AC current flows through the relay coils, alternating magnetic flux is produced. These fluxes induce eddy currents in the aluminium disc. The interaction between the magnetic flux and eddy currents produces a torque, causing the disc to rotate. When the torque exceeds the control spring force, the moving contact closes with the fixed contact and sends a trip signal to the circuit breaker. After the fault is cleared, the spring returns the disc to its original position.\n\nInduction Cup Relay:\nAn induction cup relay consists of a lightweight aluminium cup instead of a disc. The cup is placed inside the magnetic field produced by electromagnets. Alternating magnetic flux induces eddy currents in the aluminium cup. The interaction between the magnetic flux and eddy currents produces torque, causing the cup to rotate. When the operating torque becomes greater than the restraining torque, the contacts close and the relay operates. Due to its light moving system, it provides faster operation than the induction disc relay.\n\nDifference Between Induction Disc and Induction Cup Relay:\n• Induction disc relay uses an aluminium disc, whereas induction cup relay uses an aluminium cup.\n• Induction disc relay has slower operation, whereas induction cup relay operates faster.\n• Induction disc relay has higher inertia, whereas induction cup relay has lower inertia.\n• Induction disc relay is mainly used for overcurrent and earth fault protection, whereas induction cup relay is used for high-speed distance and directional protection.\n• Induction disc relay has a simple construction, whereas induction cup relay has a more complex construction.\n\nAdvantages:\n• Simple and reliable operation.\n• Good operating accuracy.\n• Long service life.\n• Low maintenance.\n• Suitable for AC protection systems.\n\nApplications:\n• Overcurrent protection.\n• Earth fault protection.\n• Directional protection.\n• Distance protection.\n• Protection of transmission lines and feeders."
+                },
+                {
+                    "id": "sgp_1_7",
+                    "question": "Explain impedance relay in detail.",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2024"
+                    ],
+                    "answer": "Definition:\nAn impedance relay is a type of distance relay that operates when the measured impedance between the relay location and the fault point becomes less than a preset value. It measures impedance using the ratio of voltage to current (Z = V/I) and is mainly used for the protection of transmission lines.\n\nWorking/Explanation:\n• The relay receives voltage from the Potential Transformer (PT) and current from the Current Transformer (CT).\n• It continuously measures the impedance using the formula Z = V/I.\n• During normal operating conditions, the measured impedance is greater than the preset impedance value, so the relay does not operate.\n• When a fault occurs on the transmission line, the voltage decreases and the current increases.\n• As a result, the measured impedance decreases.\n• If the measured impedance becomes less than the preset impedance value, the relay operates.\n• The relay sends a trip signal to the circuit breaker.\n• The circuit breaker disconnects the faulty section from the healthy part of the power system.\n\nCharacteristics:\n• Operates based on the measured impedance.\n• Characteristic is a circle centered at the origin on the R-X plane.\n• Non-directional relay.\n• Operating region lies inside the characteristic circle.\n• Suitable for medium-length transmission lines.\n\nAdvantages:\n• Simple construction.\n• Fast operation.\n• Easy to set and adjust.\n• Reliable performance.\n• Suitable for transmission line protection.\n\nDisadvantages:\n• Does not provide directional protection.\n• Affected by fault resistance.\n• May operate during heavy load conditions.\n• Performance is affected by power swings.\n• Not suitable for long transmission lines.\n\nApplications:\n• Protection of transmission lines.\n• Backup protection of power systems.\n• Protection of medium-length transmission lines.\n• Used in substations.\n• Used in high-voltage power networks."
+                },
+                {
+                    "id": "sgp_1_8",
+                    "question": "Explain HVDC circuit breaker.",
+                    "frequency": 1,
+                    "exams": [
+                        "summer 2024"
+                    ],
+                    "answer": "Definition:\nAn HVDC (High Voltage Direct Current) circuit breaker is a protective device used to interrupt fault current in an HVDC transmission system. It quickly detects and isolates the faulty section of the DC network to protect equipment and maintain the stability of the power system.\n\nWorking/Explanation:\n• Under normal conditions, the HVDC circuit breaker allows the DC current to flow through the transmission line.\n• The protection system continuously monitors the line for faults.\n• When a fault occurs, the relay detects the abnormal current and sends a trip signal.\n• The circuit breaker opens its main contacts to interrupt the fault current.\n• Since DC current has no natural current zero, the breaker creates an artificial current zero using power electronic devices and energy absorption circuits.\n• The arc produced during interruption is extinguished quickly.\n• The faulty section is isolated from the healthy part of the HVDC system.\n• After fault clearance, the system can be restored to normal operation.\n\nCharacteristics:\n• Very fast operating speed.\n• Can interrupt high DC fault currents.\n• Uses power electronic switches.\n• Provides reliable protection for HVDC systems.\n• Suitable for high-voltage and high-power transmission.\n\nAdvantages:\n• Fast fault interruption.\n• Protects expensive HVDC equipment.\n• Improves system reliability.\n• Reduces equipment damage.\n• Enables safe operation of HVDC grids.\n\nDisadvantages:\n• High installation cost.\n• Complex construction and control.\n• Requires advanced power electronic components.\n• Maintenance is more difficult than AC circuit breakers.\n• Generates switching losses.\n\nApplications:\n• HVDC transmission systems.\n• Offshore wind power connections.\n• Long-distance power transmission.\n• Interconnection of asynchronous power grids.\n• Multi-terminal HVDC networks."
+                },
+                {
+                    "id": "sgp_1_9",
+                    "question": "what is static relay, and explain advantages and disadvantages of static relay.",
+                    "frequency": 2,
+                    "exams": [
+                        "winter 2022",
+                        "winter supply 2022"
+                    ],
+                    "answer": "Definition:\nA static relay is an electrical protective relay that uses electronic components such as transistors, diodes, resistors, capacitors, and operational amplifiers instead of moving mechanical parts for fault detection. It detects faults in the power system and sends a trip signal to the circuit breaker to isolate the faulty section. Static relays are faster, more accurate, and more reliable than electromagnetic relays.\n\nWorking/Explanation:\n• The relay receives voltage and current signals from the Potential Transformer (PT) and Current Transformer (CT).\n• The input signals are converted into suitable low-level electrical signals.\n• Electronic circuits continuously compare the measured values with the preset settings.\n• If the measured value exceeds the preset limit, the electronic comparator produces an output signal.\n• The output circuit energizes the trip relay.\n• The trip relay sends a trip signal to the circuit breaker.\n• The circuit breaker disconnects the faulty section from the power system.\n• After the fault is cleared, the relay returns to its normal condition.\n\nAdvantages:\n• Very fast operation.\n• High accuracy and sensitivity.\n• No moving parts, so less maintenance.\n• Low power consumption.\n• Compact size and lightweight.\n\nDisadvantages:\n• Higher initial cost than electromagnetic relays.\n• Requires an external power supply.\n• Sensitive to voltage surges and electrical noise.\n• Repair and troubleshooting are more difficult.\n• Less flexible than modern numerical relays.\n\nApplications:\n• Protection of transmission lines.\n• Protection of transformers.\n• Protection of generators.\n• Protection of motors.\n• Protection of feeders and substations."
+                },
+                {
+                    "id": "sgp_1_10",
+                    "question": "Explain the working principle of a Balanced Beam relay.",
+                    "frequency": 1,
+                    "exams": [
+                        "summer 2024"
+                    ],
+                    "answer": "Definition:\nA balanced beam relay is an electromechanical protective relay that operates based on the principle of a balanced beam. It consists of a pivoted beam with two arms, each connected to a coil. The relay operates when the magnetic forces acting on the beam become unbalanced due to a fault condition in the power system.\n\nWorking/Explanation:\n• The balanced beam relay has two coils, one for current and one for voltage.\n• Under normal operating conditions, the magnetic forces produced by the current and voltage coils are balanced, keeping the beam in a horizontal position.\n• When a fault occurs, the current increases, causing an imbalance in the magnetic forces.\n• The increased current produces a stronger magnetic field in the current coil, which exerts a greater force on one side of the beam.\n• This causes the beam to tilt towards the side of the stronger magnetic force.\n• As the beam tilts, it closes a set of contacts, sending a trip signal to the circuit breaker.\n• The circuit breaker then isolates the faulty section from the healthy part of the power system.\n\nAdvantages:\n• Simple construction and easy to maintain.\n• Reliable operation under normal conditions.\n• Can be used for various protection schemes.\n\nDisadvantages:\n• Limited sensitivity compared to modern relays.\n• Slower operation than electronic relays.\n• Affected by mechanical wear and tear over time.\n\nApplications:\n• Overcurrent protection in distribution systems.\n• Earth fault protection in power systems.\n• Backup protection for transformers and generators."
+                }
+            ]
+        },
+        {
+            "title": "Unit 2",
+            "questions": [
+                {
+                    "id": "sgp_2_1",
+                    "question": "Explain numerical protection working principle, types & advantages & disavantages of Numerical relay",
+                    "frequency": 2,
+                    "exams": [
+                        "summer 2022",
+                        "winter 2022"
+                    ],
+                    "answer": "Numerical Protection\nThe working principle of numerical protection is based on digital signal processing and microprocessor technology. \n1. It samples the current and voltage signals from the power system.\n2. It uses algorithms to calculate the fault conditions.\n3. It compares the calculated values with the set values to determine if a fault has occurred.\n4. If a fault is detected, it sends a trip signal to the circuit breaker to isolate the fault.\n\nTypes of Numerical Relays\n* Overcurrent relay\n* Distance relay\n* Differential relay\n\nAdvantages of Numerical Relay\n* High speed operation\n* High accuracy\n* Flexibility in setting and configuration\n* Ability to communicate with other devices\n* Self testing and diagnostic capabilities\n\nDisadvantages of Numerical Relay\n* High cost\n* Dependence on software and programming\n* Potential for cyber security threats\n* Requires regular maintenance and updating\n* Can be affected by electromagnetic interference"
+                },
+                {
+                    "id": "sgp_2_2",
+                    "question": "what are different method of earthing and their types explain its adavantages explain one type in detail",
+                    "frequency": 2,
+                    "exams": [
+                        "summer 2022",
+                        "winter 2022"
+                    ],
+                    "answer": "Methods of Earthing\nThere are several methods of earthing, including:\n* Plate earthing\n* Rod earthing\n* Strip earthing\n* Wire earthing\n* Pipe earthing\n\nOne type of earthing is Plate Earthing. \nPlate earthing is a method where a metal plate is buried in the earth to provide a path to ground for electrical currents. \nAdvantages of Plate Earthing are:\n* Low cost\n* Easy to install\n* Low maintenance\n* High conductivity\n* Safe for equipment and personnel \n\nIn detail, Plate Earthing involves burying a metal plate, usually made of copper or galvanized steel, in the earth. The plate is connected to the electrical system and provides a path to ground for fault currents. This method is commonly used in residential and commercial buildings."
+                },
+                {
+                    "id": "sgp_2_3",
+                    "question": "explain construction working surge absorber and its application",
+                    "frequency": 1,
+                    "exams": [
+                        "summer 2022"
+                    ],
+                    "answer": "Construction\nThe surge absorber is a device that protects electrical equipment from voltage surges. It is constructed with a metal oxide varistor, a resistor, and a capacitor. The metal oxide varistor is the main component that absorbs the surge voltage.\n\nWorking\nThe working of a surge absorber can be explained in the following steps:\n1. The surge absorber is connected in parallel with the electrical equipment.\n2. When a voltage surge occurs, the metal oxide varistor detects the surge and starts conducting.\n3. The surge current is diverted through the varistor, protecting the equipment.\n4. The varistor absorbs the surge energy and prevents it from reaching the equipment.\n\nApplications\nThe surge absorber has the following applications:\n* Protection of power transmission lines\n* Protection of distribution systems\n* Protection of electrical equipment in industrial plants\n* Protection of consumer electronics\n* Protection of renewable energy systems"
+                },
+                {
+                    "id": "sgp_2_4",
+                    "question": "explain advanatages of numerical relay over electromechanical relay ",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2022"
+                    ],
+                    "answer": "Advantages of Numerical Relay\nThe numerical relay has several advantages over the electromechanical relay. Some of the key advantages are:\n* High speed of operation, allowing for faster protection and reduced damage to equipment\n* Ability to perform multiple protection functions in a single device, reducing the overall cost and size of the protection system\n* Improved accuracy and reliability, as numerical relays are less prone to mechanical failures and can be easily tested and calibrated\n* Ability to provide detailed information about the fault, including the type and location of the fault, allowing for easier diagnosis and repair\n* Flexibility and programmability, allowing the relay to be easily configured and adapted to different protection schemes and applications"
+                },
+                {
+                    "id": "sgp_2_5",
+                    "question": "Draw and explain characteristics of impedance relay and mho relay",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2022"
+                    ],
+                    "answer": "Characteristics of Impedance Relay and Mho Relay\nThe impedance relay and mho relay are used for protection in power systems. \nCharacteristics of these relays are as follows:\nFor Impedance Relay:\n* Operating time is dependent on the magnitude of the fault current\n* It has a circular characteristic\n* It is used for phase fault protection\nFor Mho Relay:\n* It has a circular characteristic with a offset from the origin\n* It is used for phase fault protection and has high speed of operation\n* It has a constant impedance characteristic \nThe mho relay is more sensitive than the impedance relay and is used for long transmission lines. \nThe impedance relay is simple in construction and is used for short transmission lines. \nBoth relays are used to protect the power system from faults and improve the system reliability."
+                },
+                {
+                    "id": "sgp_2_6",
+                    "question": "comapre and contrast amplitude and phase comparator techniques how are these techniquesimplemented in static relay?",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2025"
+                    ],
+                    "answer": "Comparison of Amplitude and Phase Comparator Techniques\nThe amplitude comparator technique and phase comparator technique are two methods used in static relays for protection purposes. \nKey differences between these techniques are:\n* Amplitude comparator technique compares the magnitude of two signals to determine the fault condition.\n* Phase comparator technique compares the phase difference between two signals to determine the fault condition.\n\nImplementation in Static Relay\nThese techniques are implemented in static relays using electronic circuits. \nThe main components used are:\n* Analog to digital converters to convert the analog signals to digital signals\n* Microprocessors to process the digital signals and make decisions based on the comparison results\n* The amplitude comparator technique is used in overcurrent and undervoltage relays\n* The phase comparator technique is used in distance relays and out of step relays."
+                },
+                {
+                    "id": "sgp_2_7",
+                    "question": "explain working of numerical type relay",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2022"
+                    ],
+                    "answer": "Working of Numerical Type Relay\nThe numerical type relay is a digital device used for protection in power systems. The working of this relay can be explained in the following steps:\n1. The relay receives electrical signals from current transformers and voltage transformers.\n2. These signals are then converted into digital form using analog to digital converters.\n3. The digital signals are processed by a microprocessor, which performs the protection functions.\n4. The microprocessor uses algorithms to detect faults and determine the type of fault.\n5. If a fault is detected, the relay sends a trip signal to the circuit breaker to isolate the faulty section.\n6. The relay also provides information about the fault, such as the type of fault and the location of the fault.\nSome key features of numerical type relays include:\n* High speed and accuracy\n* Ability to perform multiple protection functions\n* Ability to communicate with other devices\n* Ability to store data and perform analysis\n* Ability to be programmed and configured using software."
+                }
+            ]
+        },
+        {
+            "title": "Unit 3",
+            "questions": [
+                {
+                    "id": "sgp_3_1",
+                    "question": "What are the characteristics of SF₆ gas? Explain with neat diagram the working principle of an SF₆ circuit breaker",
+                    "frequency": 2,
+                    "exams": [
+                        "winter 2022",
+                        "summer 2023"
+                    ],
+                    "answer": "Characteristics of SF₆ Gas\nThe characteristics of SF₆ gas are:\n* High dielectric strength\n* High arc quenching ability\n* Low toxicity\n* Non-flammable\n* Chemically stable\n\nWorking Principle of an SF₆ Circuit Breaker\nThe working principle of an SF₆ circuit breaker is as follows:\n1. The SF₆ circuit breaker consists of a fixed and moving contact.\n2. The moving contact is connected to a piston which is driven by a high pressure SF₆ gas.\n3. When the circuit breaker is closed, the moving contact touches the fixed contact and the circuit is complete.\n4. When a fault occurs, the circuit breaker is opened and the moving contact separates from the fixed contact.\n5. The high pressure SF₆ gas is released and it quenches the arc formed between the contacts.\n6. The SF₆ gas absorbs the heat generated by the arc and cools the circuit breaker."
+                },
+                {
+                    "id": "sgp_3_2",
+                    "question": "Explain the construction and working principle of a minimum oil circuit breaker with neat diagram.",
+                    "frequency": 2,
+                    "exams": [
+                        "summer 2023",
+                        "winter 2024"
+                    ],
+                    "answer": "Construction\nThe minimum oil circuit breaker consists of a tank filled with oil, and inside the tank, there are two contacts, one fixed and one moving. The moving contact is connected to a mechanism that allows it to move up and down. The tank is filled with a small amount of oil, just enough to cover the contacts.\n\nWorking Principle\nThe working principle of a minimum oil circuit breaker can be explained in the following steps:\n1. When the circuit is closed, the moving contact touches the fixed contact, allowing the current to flow.\n2. When a fault occurs, the moving contact is pulled away from the fixed contact, breaking the circuit.\n3. As the contacts separate, an arc is formed between them.\n4. The arc is extinguished by the oil in the tank, which cools and deionizes the arc.\nKey features of the minimum oil circuit breaker include:\n* Small size and low oil volume\n* Simple construction and low maintenance\n* Fast breaking and making times\n* Ability to interrupt high fault currents\n* Suitable for medium voltage applications"
+                },
+                {
+                    "id": "sgp_3_3",
+                    "question": "Compare AC and DC circuit breakers.",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2023"
+                    ],
+                    "answer": "Comparison of AC and DC Circuit Breakers\nThe main difference between AC and DC circuit breakers lies in their design and functionality. \n\nCharacteristics of AC and DC Circuit Breakers\nThe key characteristics of AC and DC circuit breakers are as follows:\n* AC circuit breakers are designed to handle the zero crossing of the AC waveform, which helps in extinguishing the arc.\n* DC circuit breakers, on the other hand, do not have zero crossing, making it more difficult to extinguish the arc.\n* AC circuit breakers are generally less expensive and more widely available than DC circuit breakers.\n* DC circuit breakers require more complex designs and higher voltage ratings.\n* The interruption capacity of DC circuit breakers is typically lower than that of AC circuit breakers.\n\nApplications of AC and DC Circuit Breakers\nAC circuit breakers are commonly used in power distribution systems, while DC circuit breakers are used in applications such as:\n* DC power systems\n* Renewable energy systems\n* Electric vehicles\n* Data centers\n* Telecommunication systems \n\nIn summary, AC and DC circuit breakers have distinct characteristics and applications, and the choice between them depends on the specific requirements of the electrical system."
+                },
+                {
+                    "id": "sgp_3_4",
+                    "question": "Explain the construction and working of a vacuum circuit breaker.",
+                    "frequency": 2,
+                    "exams": [
+                        "winter 2023"
+                    ],
+                    "answer": "Construction\nThe vacuum circuit breaker consists of a vacuum interrupter, which is the main component, and other supporting components such as insulators, contacts, and a mechanism to open and close the contacts. The vacuum interrupter is a sealed chamber that contains the contacts and is evacuated to a high vacuum.\n\nWorking\nThe working of a vacuum circuit breaker can be explained in the following steps:\n1. When the circuit breaker is closed, the contacts are in touch and the current flows through them.\n2. When the circuit breaker is opened, the contacts separate and an arc is formed between them.\n3. The arc is quickly extinguished due to the high vacuum in the interrupter, which prevents the arc from being sustained.\n4. The vacuum circuit breaker is then able to interrupt the current and prevent any damage to the system.\n\nKey Features\nSome key features of vacuum circuit breakers include:\n* High reliability and low maintenance\n* Ability to interrupt high currents\n* Fast operation and high speed of opening and closing\n* Environmentally friendly and free from greenhouse gas emissions\n* Compact design and low weight"
+                },
+                {
+                    "id": "sgp_3_5",
+                    "question": "Discuss the following terms with neat diagrams:\na. Arc voltage\nb. Transient restriking voltage (TRV)\nc. Rate of rise of restriking voltage (RRRV)\nd. Recovery voltage",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2024"
+                    ],
+                    "answer": "Switchgear and Protection Terms\nThe terms are related to circuit breakers in electrical systems. \nKey terms are:\n* Arc voltage: the voltage that appears across the contacts of a circuit breaker when it opens and an arc is formed\n* Transient restriking voltage: the voltage that appears across the contacts of a circuit breaker when it tries to restrike after an arc has been extinguished\n* Rate of rise of restriking voltage: the rate at which the transient restriking voltage increases\n* Recovery voltage: the voltage that appears across the contacts of a circuit breaker after the arc has been extinguished and the circuit breaker has recovered\n\nCharacteristics of these terms are:\n* Arc voltage is high and can cause damage to the circuit breaker\n* Transient restriking voltage can cause the circuit breaker to restrike and form another arc\n* Rate of rise of restriking voltage is important in determining the ability of the circuit breaker to withstand the restriking voltage\n* Recovery voltage is the final voltage that appears across the contacts of the circuit breaker after it has recovered from the arc."
+                },
+                {
+                    "id": "sgp_3_6",
+                    "question": "Explain the arcing phenomenon in circuit breakers.",
+                    "frequency": 2,
+                    "exams": [
+                        "summer 2024",
+                        "winter 2024"
+                    ],
+                    "answer": "Introduction to Arcing Phenomenon\nThe arcing phenomenon in circuit breakers occurs when a circuit breaker opens and an electric arc forms between the contacts. This arc is a result of the ionization of the air between the contacts, creating a conductive path for the current to flow.\n\nCharacteristics of Arcing\n* The arc is a high-temperature plasma that can reach temperatures of up to 30,000 Kelvin\n* The arc is highly conductive and can carry high currents\n* The arc is also highly radiant, emitting a significant amount of energy in the form of light and heat\n* The arc can be affected by factors such as the voltage, current, and speed of the circuit breaker\n\nWorking of Arcing\n1. When a circuit breaker opens, an electric arc forms between the contacts\n2. The arc is sustained by the ionization of the air between the contacts\n3. The arc can be extinguished by increasing the distance between the contacts or by using an arc-quenching medium such as SF6 gas."
+                },
+                {
+                    "id": "sgp_3_7",
+                    "question": "Describe the phenomenon of arcing in circuit breakers. Explain the arc interruption process in detail. (Dec-2023)",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2023"
+                    ],
+                    "answer": "Arcing in Circuit Breakers\nThe phenomenon of arcing in circuit breakers occurs when a circuit breaker opens and an electric arc forms between the contacts. This arc is a result of the ionization of the air between the contacts, creating a conductive path for the current to flow.\n\nArc Interruption Process\nThe arc interruption process involves the following steps:\n* The circuit breaker opens, and an electric arc forms between the contacts.\n* The arc is elongated and cooled by the surrounding medium, such as air or oil.\n* The arc is extinguished when the current reaches zero, and the contacts are fully separated.\n* The circuit breaker then remains open, preventing any further current flow.\n\nThe arc interruption process is critical to the proper functioning of circuit breakers, as it allows them to safely interrupt fault currents and prevent damage to the electrical system. The process involves a combination of thermal and electrical phenomena, and is influenced by factors such as the type of circuit breaker, the voltage and current levels, and the surrounding environment."
+                },
+                {
+                    "id": "sgp_3_8",
+                    "question": "Describe the phenomenon of arcing in circuit breakers. Explain the arc interruption process in detail.",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2023"
+                    ],
+                    "answer": "Introduction to Arcing\nThe phenomenon of arcing in circuit breakers occurs when a high voltage is applied across a small gap between two conductors, resulting in the formation of an electric arc. This arc is a conducting path that allows current to flow between the conductors.\n\nArc Interruption Process\nThe arc interruption process involves several steps:\n* The circuit breaker opens, creating a gap between the conductors\n* An electric arc forms across the gap, allowing current to continue flowing\n* The arc is then extinguished by cooling and lengthening it, using techniques such as:\n  * Increasing the gap length\n  * Using a dielectric gas to cool the arc\n  * Applying a magnetic field to lengthen the arc\n* Once the arc is extinguished, the circuit is broken and the current flow stops\n\nThe arc interruption process is critical in circuit breakers, as it allows for the safe and reliable interruption of electrical circuits. The process must be carefully controlled to prevent damage to the circuit breaker and surrounding equipment."
+                }
+            ]
+        },
+        {
+            "title": "Unit 4",
+            "questions": [
+                {
+                    "id": "sgp_4_1",
+                    "question": "Explain protection of ring main and parallel feeder system",
+                    "frequency": 2,
+                    "exams": [
+                        "summer 2022",
+                        "summer 2024",
+                        "summer 2025"
+                    ],
+                    "answer": "Protection of Ring Main and Parallel Feeder System\nThe protection of ring main and parallel feeder system is a critical aspect of power distribution systems. \nKey Features of Protection\n* The ring main system is protected by using a combination of overcurrent and earth fault protection relays.\n* The parallel feeder system is protected by using a combination of overcurrent, earth fault, and differential protection relays.\n* The protection system is designed to detect and isolate faults quickly to minimize damage to equipment and ensure reliable power supply.\n* The protection system also includes backup protection to ensure that the system remains operational even if the primary protection fails.\n* The protection system is coordinated to ensure that the fault is cleared quickly and selectively. \nThe protection of ring main and parallel feeder system is essential to ensure reliable and efficient power distribution."
+                },
+                {
+                    "id": "sgp_4_2",
+                    "question": "Describe with neat sketch time graded and current graded protection of a feeder.",
+                    "frequency": 2,
+                    "exams": [
+                        "summer 2025",
+                        "summer 2024",
+                        "winter 2022"
+                    ],
+                    "answer": "Time Graded and Current Graded Protection\nTime graded protection is a method where the protection devices are set to operate at different times based on the magnitude of the fault current. On the other hand, current graded protection is a method where the protection devices are set to operate based on the magnitude of the fault current.\n\nCharacteristics of Time Graded Protection:\n* It is used for radial feeders\n* The relay farthest from the source has the longest operating time\n* The relay closest to the source has the shortest operating time\n\nCharacteristics of Current Graded Protection:\n* It is used for loop or ring feeders\n* The relay operates based on the magnitude of the fault current\n* The relay closest to the fault operates first\n\nThe main difference between time graded and current graded protection is the way the protection devices are set to operate. Time graded protection is based on the time of operation, while current graded protection is based on the magnitude of the fault current. This allows for selective operation of the protection devices and prevents unnecessary tripping of the feeders."
+                },
+                {
+                    "id": "sgp_4_3",
+                    "question": "Explain the circulating current protection of busbar. Also explain linear couplers",
+                    "frequency": 1,
+                    "exams": [
+                        "summer 2022"
+                    ],
+                    "answer": "Circulating Current Protection of Busbar\nThe circulating current protection of busbar is a type of protection scheme used to detect and isolate faults in the busbar system. This protection scheme works by comparing the currents flowing in and out of the busbar. If a fault occurs, the currents will not balance, and the protection scheme will detect this imbalance and initiate a trip signal to isolate the faulty section.\n\nLinear Couplers\nLinear couplers are used in the circulating current protection scheme to couple the currents from the busbar to the protection relay. The characteristics of linear couplers are:\n* They are used to measure the current flowing in the busbar\n* They are designed to provide a linear output proportional to the input current\n* They are used to couple the currents from the busbar to the protection relay\n* They are used in the circulating current protection scheme to detect faults in the busbar system\n* They provide high accuracy and reliability in measuring the currents flowing in the busbar"
+                },
+                {
+                    "id": "sgp_4_4",
+                    "question": "Explain high impedance differential protection of busbar.",
+                    "frequency": 1,
+                    "exams": [
+                        "summer 2022"
+                    ],
+                    "answer": "Introduction to High Impedance Differential Protection\nHigh impedance differential protection is a type of protection scheme used for busbar protection in electrical power systems. This protection scheme is designed to detect and respond to faults that occur on the busbar.\n\nWorking Principle\nThe working principle of high impedance differential protection involves comparing the currents flowing into and out of the busbar. The protection scheme uses high impedance relays that are connected to the current transformers installed on the busbar. The relays measure the differential current, which is the difference between the currents flowing into and out of the busbar.\n\nKey Features\nSome key features of high impedance differential protection include:\n* High sensitivity to busbar faults\n* Ability to detect high impedance faults\n* Fast operating time\n* Simple and reliable design\n* Low maintenance requirements\n\nThe high impedance differential protection scheme is widely used in power systems due to its simplicity, reliability, and effectiveness in detecting busbar faults."
+                },
+                {
+                    "id": "sgp_4_5",
+                    "question": "Explain differential protection scheme used for busbar protection.",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2022"
+                    ],
+                    "answer": "Differential Protection Scheme\nThe differential protection scheme is used for busbar protection to detect faults and prevent damage to the system. This scheme is based on the principle of comparing the currents flowing into and out of the busbar.\n\nWorking of Differential Protection Scheme\nThe working of the differential protection scheme can be explained in the following steps:\n1. Current transformers are installed on each feeder connected to the busbar.\n2. The currents from each feeder are measured and compared.\n3. If the sum of the currents flowing into the busbar is not equal to the sum of the currents flowing out of the busbar, a fault is detected.\n4. The differential current is then used to operate the relay and trip the circuit breaker.\n\nKey Features\nSome key features of the differential protection scheme include:\n* High sensitivity to faults\n* Fast operation\n* Ability to detect faults during normal operating conditions\n* Ability to detect faults during abnormal operating conditions\n* Simple and reliable operation \n\nThe differential protection scheme is widely used for busbar protection due to its high reliability and fast operation."
+                },
+                {
+                    "id": "sgp_4_6",
+                    "question": "Explain carrier aided distance protection scheme",
+                    "frequency": 2,
+                    "exams": [
+                        "summer 2024",
+                        "winter 2024"
+                    ],
+                    "answer": "Introduction to Carrier Aided Distance Protection Scheme\nThe carrier aided distance protection scheme is a type of protection scheme used in power systems to detect and isolate faults. This scheme uses a carrier signal to aid in the detection of faults and to provide accurate distance measurement.\n\nKey Features of Carrier Aided Distance Protection Scheme\n* The scheme uses a carrier signal transmitted over the power line to determine the distance of the fault from the relay location\n* The carrier signal is compared with the voltage and current signals at the relay location to determine the fault distance\n* The scheme is used for protecting transmission lines and is particularly useful for lines with high fault levels\n\nWorking of Carrier Aided Distance Protection Scheme\n1. The carrier signal is transmitted over the power line from the relay location\n2. The signal is reflected back from the fault location\n3. The reflected signal is compared with the voltage and current signals at the relay location\n4. The comparison is used to determine the distance of the fault from the relay location\n5. If the fault distance is within the protected zone, the relay operates to isolate the fault \n\nThe carrier aided distance protection scheme provides accurate distance measurement and is useful for protecting transmission lines."
+                },
+                {
+                    "id": "sgp_4_7",
+                    "question": ")Explain three-step protection scheme for transmission line protection in detail.",
+                    "frequency": 1,
+                    "exams": [
+                        "summer 2025"
+                    ],
+                    "answer": "Three-Step Protection Scheme\nThe three-step protection scheme is used for transmission line protection. This scheme is used to protect the transmission line from faults. \nKey Features of the Scheme\n* The scheme consists of three zones of protection: zone 1, zone 2, and zone 3.\n* Zone 1 is the primary protection zone and it protects 80-90% of the transmission line.\n* Zone 2 is the backup protection zone and it protects the remaining 10-20% of the transmission line.\n* Zone 3 is the remote backup protection zone and it protects the adjacent transmission lines.\nWorking of the Scheme\n1. The zone 1 protection operates for faults within the primary protection zone.\n2. If the zone 1 protection fails to operate, the zone 2 protection operates.\n3. If the zone 2 protection also fails to operate, the zone 3 protection operates."
+                },
+                {
+                    "id": "sgp_4_8",
+                    "question": "Explain in detail busbar protection schemes",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2022"
+                    ],
+                    "answer": "Busbar Protection Schemes\nBusbar protection is a critical component of power system protection. It is used to protect the busbar from faults such as short circuits. \n\nCharacteristics of Busbar Protection Schemes\n* High speed of operation\n* High reliability\n* Ability to detect faults quickly and accurately\n* Ability to isolate the faulty section quickly\n* Ability to prevent damage to equipment\n\nTypes of Busbar Protection Schemes\nThere are several types of busbar protection schemes, including differential protection, overcurrent protection, and distance protection. Differential protection is the most commonly used scheme, as it provides high speed and accuracy. \n\nWorking of Busbar Protection Schemes\n1. The protection scheme detects a fault on the busbar\n2. The scheme sends a signal to the circuit breaker to trip\n3. The circuit breaker trips and isolates the faulty section\n4. The protection scheme then sends a signal to the backup protection to check if the fault has been cleared\n5. If the fault has been cleared, the protection scheme sends a signal to the circuit breaker to close and restore power to the busbar."
+                }
+            ]
+        },
+        {
+            "title": "Unit 5",
+            "questions": [
+                {
+                    "id": "sgp_5_1",
+                    "question": "Write short note on insulation co-ordination",
+                    "frequency": 2,
+                    "exams": [
+                        "winter 2024",
+                        "winter 2022"
+                    ],
+                    "answer": "Insulation Co-ordination\nInsulation co-ordination is the process of selecting and co-ordinating insulation levels of equipment in a power system to ensure that the equipment can withstand voltage stresses and prevent damage from overvoltages. \n\nKey Considerations\nThe main considerations in insulation co-ordination are:\n* selection of insulation levels for equipment\n* co-ordination of insulation levels with surge arresters and other protective devices\n* consideration of voltage stresses due to lightning and switching surges\n* selection of appropriate insulation materials and design\n\nImportance\nInsulation co-ordination is important to prevent damage to equipment from overvoltages and to ensure reliable operation of the power system. It involves selecting the appropriate insulation levels for equipment and co-ordinating these levels with other protective devices to prevent damage from voltage stresses."
+                },
+                {
+                    "id": "sgp_5_2",
+                    "question": "Explain construction, working of lightning arrester & its application",
+                    "frequency": 2,
+                    "exams": [
+                        "winter 2022",
+                        "winter 2024"
+                    ],
+                    "answer": "Construction\nThe lightning arrester is a protective device used in electrical power systems to protect against lightning strikes. It consists of a series of components, including a spark gap, a valve element, and a resistor. The spark gap is the main component that allows the arrester to operate, and it is designed to spark over when a high voltage is applied.\n\nWorking\nThe working of a lightning arrester can be explained in the following steps:\n1. When a lightning strike occurs, it induces a high voltage in the power line.\n2. The high voltage causes the spark gap in the arrester to spark over.\n3. When the spark gap sparks over, it creates a path to ground for the high voltage.\n4. The valve element in the arrester then operates to divert the high voltage to ground.\n5. The resistor in the arrester limits the current flowing to ground, preventing damage to the power system.\n\nApplication\nThe applications of lightning arresters include:\n* Protecting power transmission lines from lightning strikes\n* Protecting power distribution systems from lightning strikes\n* Protecting electrical equipment from voltage surges\n* Protecting substations from lightning strikes\n* Protecting power plants from lightning strikes"
+                },
+                {
+                    "id": "sgp_5_3",
+                    "question": "Explain Buchholz relay with neat diagram (Adv. & dis. / Application) ",
+                    "frequency": 4,
+                    "exams": [
+                        "summer 2024",
+                        "winter 2022",
+                        "summer 2025",
+                        "winter 2024"
+                    ],
+                    "answer": "Introduction to Buchholz Relay\nThe Buchholz relay is a protective device used in electrical power systems to detect faults in oil-filled transformers. \n\nWorking of Buchholz Relay\n1. The relay is installed in the oil conservator of the transformer.\n2. It consists of two floats, one for oil level and one for gas accumulation.\n3. When a fault occurs, gas is generated and accumulates in the relay.\n4. The gas float rises and operates a switch to give an alarm.\n5. If the fault is severe, the oil level float also rises and operates a trip switch to disconnect the transformer.\n\nAdvantages of Buchholz Relay\n* Provides protection against internal faults in transformers\n* Detects gas accumulation and oil level changes\n* Gives an alarm for minor faults and trips the transformer for major faults\n* Simple and reliable in operation\n* Low maintenance cost\n\nDisadvantages of Buchholz Relay\n* Not suitable for small transformers\n* Requires regular checking and maintenance\n* May not detect external faults\n* Can be affected by oil quality and temperature\n* Has a slow response time\n\nApplications of Buchholz Relay\n* Power transformers\n* Distribution transformers\n* Generator transformers\n* Auto transformers\n* Oil-filled reactors"
+                },
+                {
+                    "id": "sgp_5_4",
+                    "question": "Explain percentage differential protection for Δ-Y transformers",
+                    "frequency": 2,
+                    "exams": [
+                        "winter 2022",
+                        "summer 2024"
+                    ],
+                    "answer": "Introduction to Percentage Differential Protection\nThe percentage differential protection is a type of protection used for transformers, particularly for Δ-Y transformers. This protection scheme is used to detect and prevent faults that occur within the transformer.\n\nWorking Principle\nThe working principle of percentage differential protection is based on the comparison of the currents flowing in the primary and secondary windings of the transformer. The protection scheme uses the following steps:\n1. The currents flowing in the primary and secondary windings are measured.\n2. The measured currents are then compared to determine if there is any difference between them.\n3. If the difference is within a certain percentage, the protection scheme does not operate.\n4. If the difference exceeds the set percentage, the protection scheme operates and trips the circuit breaker.\n\nKey Features\nThe key features of percentage differential protection for Δ-Y transformers include:\n* High sensitivity to internal faults\n* Ability to detect faults during external faults\n* Setting of the percentage differential relay can be adjusted\n* Provides fast and reliable protection for the transformer\n* Can be used for transformers with different configurations and ratings"
+                },
+                {
+                    "id": "sgp_5_5",
+                    "question": "Explain differential protection of alternator in detail ",
+                    "frequency": 2,
+                    "exams": [
+                        "summer 2024",
+                        "winter 2022"
+                    ],
+                    "answer": "Differential Protection of Alternator\nThe differential protection of an alternator is a type of protection scheme used to detect and prevent internal faults in the alternator. \n\nCharacteristics of Differential Protection\n* It is a unit protection scheme, meaning it protects a specific zone of the power system\n* It is used to detect internal faults such as phase-to-phase and phase-to-ground faults\n* It uses current transformers to measure the current at different points in the alternator\n\nWorking of Differential Protection\n1. The current transformers are installed at the terminals of the alternator and at the neutral point.\n2. The currents measured by the current transformers are compared to detect any difference in the currents.\n3. If a fault occurs inside the alternator, the currents measured by the current transformers will be different, and the differential protection scheme will detect this difference and send a trip signal to the circuit breaker to disconnect the alternator from the power system."
+                },
+                {
+                    "id": "sgp_5_6",
+                    "question": "Explain working principle of differential relays ",
+                    "frequency": 2,
+                    "exams": [
+                        "winter 2024",
+                        "summer 2024"
+                    ],
+                    "answer": "Working Principle of Differential Relays\nThe working principle of differential relays is based on the comparison of currents flowing into and out of a protected zone. \nThe main concept is to detect any abnormality in the current flow, which could indicate a fault. \nHere are the steps involved in the working of differential relays:\n1. The relay is connected to the protected zone, such as a transformer or a generator, through current transformers.\n2. The current transformers measure the currents flowing into and out of the protected zone.\n3. The currents are then compared by the differential relay.\n4. If the currents are equal, the relay remains in a stable state, indicating no fault.\n5. If the currents are not equal, the relay operates, indicating a fault in the protected zone.\nKey features of differential relays include:\n* High sensitivity to faults\n* Fast operation\n* Ability to detect internal faults\n* Immunity to external faults\n* Simple and reliable design"
+                },
+                {
+                    "id": "sgp_5_7",
+                    "question": "Explain unbalanced load protection for alternator",
+                    "frequency": 1,
+                    "exams": [
+                        "summer 2022"
+                    ],
+                    "answer": "Unbalanced Load Protection for Alternator\nThe alternator is protected from unbalanced loads to prevent damage and ensure safe operation. Unbalanced loads occur when the three-phase currents are not equal, causing the alternator to overheat and potentially fail.\n\nCharacteristics of Unbalanced Load Protection\n* The protection system monitors the three-phase currents and detects any imbalance\n* The system trips the circuit breaker to disconnect the alternator from the load if an imbalance is detected\n* The protection system can be set to trip at a specific percentage of imbalance, such as 10% or 20%\n* The system can also be set to trip after a specific time delay to allow for temporary imbalances\n\nWorking of Unbalanced Load Protection\n1. The three-phase currents are measured using current transformers\n2. The measured currents are compared to determine if there is an imbalance\n3. If an imbalance is detected, the protection system sends a trip signal to the circuit breaker\n4. The circuit breaker trips and disconnects the alternator from the load\n5. The alternator is then shut down to prevent damage from the unbalanced load."
+                },
+                {
+                    "id": "sgp_5_8",
+                    "question": "Explain protection of an alternator from turn-to-turn fault",
+                    "frequency": 1,
+                    "exams": [
+                        "winter 2022"
+                    ],
+                    "answer": "Protection of Alternator\nTo protect an alternator from turn-to-turn faults, several methods are used. \nThe main goal is to detect the fault and isolate the alternator quickly to prevent damage. \nSome key methods include:\n* Using differential protection to detect faults between turns\n* Implementing overcurrent protection to detect excessive current flow\n* Installing ground fault protection to detect faults to ground\n* Using temperature monitoring to detect overheating due to faults\nThe protection system should be able to detect turn-to-turn faults quickly and accurately, and then trip the circuit breaker to isolate the alternator. \nThis helps to prevent damage to the alternator and ensure safe operation of the power system. \nThe protection system should also be able to distinguish between internal and external faults, and only trip for internal faults. \nThis helps to minimize unnecessary tripping and ensure reliable operation of the power system."
+                }
+            ]
+        }
+    ]
+}

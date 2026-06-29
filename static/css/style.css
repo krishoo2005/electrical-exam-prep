@@ -1,0 +1,2117 @@
+/* ===================================================
+   ExamHub - STYLE.CSS
+   PART 1
+   Global + Navbar + Progress Bar
+=================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --bg:#0f172a;
+    --bg2:#111827;
+
+    --card:#1e293b;
+
+    --primary:#00d4ff;
+    --secondary:#7c3aed;
+
+    --success:#10b981;
+    --danger:#ef4444;
+
+    --text:#ffffff;
+    --text2:#cbd5e1;
+
+    --border:#334155;
+
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+
+    --radius:18px;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+
+    background:linear-gradient(
+        180deg,
+        var(--bg),
+        var(--bg2)
+    );
+
+    color:var(--text);
+
+    min-height:100vh;
+
+}
+
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+
+/* ===========================
+Progress Bar
+=========================== */
+
+#progressBar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        #00d4ff,
+        #7c3aed
+    );
+
+    z-index:9999;
+
+    transition:.2s;
+
+}
+
+
+/* ===========================
+Navbar
+=========================== */
+
+.navbar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:rgba(15,23,42,.85);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:28px;
+    font-weight:700;
+    color:var(--primary);
+}
+
+.logo img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    display:block;
+}
+
+.navbar nav{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.navbar nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.navbar nav a:hover{
+
+    background:var(--primary);
+
+    color:#000;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===========================
+Container
+=========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+
+/* ===========================
+Buttons Default
+=========================== */
+
+button{
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    border:none;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===========================
+Links
+=========================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+/* ===================================================
+   ExamHub - STYLE.CSS
+   PART 2
+   Hero + Search + Tabs + Unit Filter
+=================================================== */
+
+
+/* ===========================
+SUBJECT HERO
+=========================== */
+
+.subject-hero{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:40px auto;
+
+    padding:50px;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+        135deg,
+        #06b6d4,
+        #2563eb,
+        #7c3aed
+    );
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.subject-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    right:-60px;
+
+    top:-60px;
+
+}
+
+.subject-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    left:-30px;
+
+    bottom:-30px;
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.subject-hero h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+.subject-hero p{
+
+    font-size:18px;
+
+    color:#eef2ff;
+
+}
+
+
+/* ===========================
+SEARCH
+=========================== */
+
+.search-section{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:30px auto;
+
+}
+
+.search-box{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    font-size:17px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:16px;
+
+    background:#1e293b;
+
+    color:white;
+
+    border:1px solid var(--border);
+
+    transition:.3s;
+
+}
+
+.search-box:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 20px rgba(0,212,255,.25);
+
+}
+
+
+/* ===========================
+TABS
+=========================== */
+
+.tabs{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:25px auto;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.tab-btn{
+
+    padding:14px 24px;
+
+    border-radius:14px;
+
+    background:#1e293b;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.tab-btn:hover{
+
+    background:#334155;
+
+}
+
+.tab-btn.active{
+
+    background:linear-gradient(
+        90deg,
+        #06b6d4,
+        #2563eb
+    );
+
+}
+
+
+/* ===========================
+UNIT FILTER
+=========================== */
+
+.unit-filter{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:20px auto 40px;
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.unit-btn{
+
+    padding:10px 18px;
+
+    background:#1e293b;
+
+    color:white;
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+}
+
+.unit-btn:hover{
+
+    background:#334155;
+
+}
+
+.unit-btn.active{
+
+    background:#10b981;
+
+}
+
+
+/* ===========================
+SECTION HEADING
+=========================== */
+
+.unit-heading{
+
+    margin-bottom:20px;
+
+}
+
+.unit-heading h2{
+
+    font-size:28px;
+
+    color:#38bdf8;
+
+    font-weight:600;
+
+}
+/* ===================================================
+   ExamHub - STYLE.CSS
+   PART 3
+   Question Cards + Answer + Buttons
+=================================================== */
+
+
+/* ===========================
+QUESTION CONTAINER
+=========================== */
+
+.questions-container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:40px auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+/* ===========================
+QUESTION CARD
+=========================== */
+
+.question-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:22px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    overflow:hidden;
+
+}
+
+.question-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 15px 40px rgba(0,212,255,.18);
+
+}
+
+
+/* ===========================
+TOP AREA
+=========================== */
+
+.question-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.question-top h3{
+
+    flex:1;
+
+    font-size:20px;
+
+    line-height:1.6;
+
+    font-weight:600;
+
+}
+
+
+/* ===========================
+FREQUENCY BADGE
+=========================== */
+
+.badge-frequency{
+
+    background:linear-gradient(
+        135deg,
+        #f59e0b,
+        #ef4444
+    );
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+
+/* ===========================
+EXAM TAGS
+=========================== */
+
+.exam-tags{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin-top:18px;
+
+}
+
+.exam-tags span{
+
+    background:#0f172a;
+
+    border:1px solid var(--border);
+
+    padding:7px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    color:#cbd5e1;
+
+}
+
+
+/* ===========================
+ANSWER
+=========================== */
+
+.answer{
+
+    margin-top:22px;
+
+    display:none;
+
+    white-space:pre-wrap;
+
+    line-height:1.9;
+
+    color:#dbeafe;
+
+    border-left:4px solid var(--primary);
+
+    padding:18px;
+
+    background:#111827;
+
+    border-radius:12px;
+
+}
+
+
+/* ===========================
+OPEN CARD
+=========================== */
+
+.question-card.open .answer{
+
+    display:block;
+
+}
+
+
+/* ===========================
+BUTTON AREA
+=========================== */
+
+.card-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:22px;
+
+}
+
+
+/* ===========================
+COPY BUTTON
+=========================== */
+
+.btn-copy{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+}
+
+.btn-copy:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* ===========================
+AI BUTTON
+=========================== */
+
+.btn-ai{
+
+    background:#7c3aed;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+}
+
+.btn-ai:hover{
+
+    background:#6d28d9;
+
+}
+
+
+/* ===========================
+BOOKMARK BUTTON
+=========================== */
+
+.bookmark-btn{
+
+    background:#1e293b;
+
+    color:white;
+
+    padding:10px 16px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+}
+
+.bookmark-btn:hover{
+
+    background:#334155;
+
+}
+
+
+/* ===========================
+COPIED STATE
+=========================== */
+
+.btn-copied{
+
+    background:#10b981 !important;
+
+}
+
+
+/* ===========================
+QUESTION ANIMATION
+=========================== */
+
+.question-card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+.question-card.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    transition:.6s ease;
+
+}
+/* ===================================================
+   ExamHub - STYLE.CSS
+   PART 4
+   AI Chat + Floating Button + Toast
+=================================================== */
+
+
+/* ===========================
+FLOATING AI BUTTON
+=========================== */
+
+.ai-fab{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #06b6d4,
+        #2563eb
+    );
+
+    color:white;
+
+    font-size:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+
+    z-index:999;
+
+}
+
+.ai-fab:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+/* ===========================
+AI CHAT BOX
+=========================== */
+
+.ai-box{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:115px;
+
+    width:380px;
+
+    max-width:95%;
+
+    height:600px;
+
+    background:#111827;
+
+    border-radius:22px;
+
+    border:1px solid var(--border);
+
+    display:none;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+
+    z-index:999;
+
+}
+
+.ai-box.open{
+
+    display:flex;
+
+}
+
+
+/* ===========================
+AI HEADER
+=========================== */
+
+.ai-header{
+
+    background:linear-gradient(
+
+        90deg,
+
+        #06b6d4,
+
+        #2563eb
+
+    );
+
+    padding:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.ai-title{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:white;
+
+}
+
+.close-ai,
+
+.clear-ai{
+
+    background:rgba(255,255,255,.2);
+
+    color:white;
+
+    width:38px;
+
+    height:38px;
+
+    border-radius:50%;
+
+    margin-left:8px;
+
+}
+
+.close-ai:hover,
+
+.clear-ai:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+
+/* ===========================
+MESSAGES
+=========================== */
+
+.ai-messages{
+
+    flex:1;
+
+    padding:18px;
+
+    overflow-y:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    background:#0f172a;
+
+}
+
+.ai-msg{
+
+    padding:14px 18px;
+
+    border-radius:16px;
+
+    line-height:1.7;
+
+    max-width:90%;
+
+    white-space:pre-wrap;
+
+    animation:fadeUp .3s ease;
+
+}
+
+.ai-msg.user{
+
+    background:#2563eb;
+
+    color:white;
+
+    align-self:flex-end;
+
+}
+
+.ai-msg.bot{
+
+    background:#1e293b;
+
+    color:white;
+
+    align-self:flex-start;
+
+}
+
+.ai-msg.loading{
+
+    opacity:.7;
+
+}
+
+
+/* ===========================
+INPUT AREA
+=========================== */
+
+.ai-input-area{
+
+    display:flex;
+
+    gap:10px;
+
+    padding:16px;
+
+    background:#111827;
+
+    border-top:1px solid var(--border);
+
+}
+
+.ai-input-area input{
+
+    flex:1;
+
+    background:#1e293b;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    color:white;
+
+    padding:14px;
+
+    outline:none;
+
+}
+
+.ai-input-area input:focus{
+
+    border-color:var(--primary);
+
+}
+
+.ai-input-area button{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:0 24px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+}
+
+.ai-input-area button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* ===========================
+TOAST
+=========================== */
+
+#toast{
+
+    position:fixed;
+
+    left:50%;
+
+    bottom:30px;
+
+    transform:translateX(-50%);
+
+    background:#111827;
+
+    color:white;
+
+    padding:14px 24px;
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:9999;
+
+}
+
+#toast.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/* ===========================
+BACK TO TOP
+=========================== */
+
+.top-btn{
+
+    position:fixed;
+
+    right:35px;
+
+    bottom:120px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.3s;
+
+    z-index:998;
+
+}
+
+.top-btn.show{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+.top-btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ===========================
+ANIMATION
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ===================================================
+   ExamHub - STYLE.CSS
+   PART 5
+   Footer + Responsive + Animations
+=================================================== */
+
+
+/* ===========================
+FOOTER
+=========================== */
+
+.footer{
+
+    margin-top:80px;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    background:#0b1120;
+
+    border-top:1px solid var(--border);
+
+}
+
+.footer h3{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+    font-size:28px;
+
+}
+
+.footer p{
+
+    color:var(--text2);
+
+    margin:6px 0;
+
+    font-size:15px;
+
+}
+
+
+/* ===========================
+FADE ANIMATION
+=========================== */
+
+.visible{
+
+    animation:fadeCard .6s ease forwards;
+
+}
+
+@keyframes fadeCard{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===========================
+BUTTON HOVER EFFECT
+=========================== */
+
+button{
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+
+/* ===========================
+LINK HOVER
+=========================== */
+
+a{
+
+    transition:.25s;
+
+}
+
+a:hover{
+
+    opacity:.9;
+
+}
+
+
+/* ===========================
+IMAGE STYLE
+=========================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+/* ===========================
+TABLET
+=========================== */
+
+@media(max-width:992px){
+
+    .navbar{
+
+        padding:16px 5%;
+
+    }
+
+    .subject-hero{
+
+        padding:35px;
+
+    }
+
+    .subject-hero h1{
+
+        font-size:38px;
+
+    }
+
+    .question-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .badge-frequency{
+
+        margin-top:10px;
+
+    }
+
+}
+
+
+/* ===========================
+MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:18px;
+
+    }
+
+    .navbar nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .subject-hero{
+
+        text-align:center;
+
+        padding:30px 20px;
+
+    }
+
+    .subject-hero h1{
+
+        font-size:32px;
+
+    }
+
+    .subject-hero p{
+
+        font-size:15px;
+
+    }
+
+    .tabs{
+
+        justify-content:center;
+
+    }
+
+    .unit-filter{
+
+        justify-content:center;
+
+    }
+
+    .question-card{
+
+        padding:18px;
+
+    }
+
+    .question-top h3{
+
+        font-size:18px;
+
+    }
+
+    .card-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .btn-copy,
+
+    .btn-ai,
+
+    .bookmark-btn{
+
+        width:100%;
+
+    }
+
+    .ai-box{
+
+        width:95%;
+
+        right:2.5%;
+
+        bottom:95px;
+
+        height:80vh;
+
+    }
+
+    .ai-fab{
+
+        width:60px;
+
+        height:60px;
+
+        right:20px;
+
+        bottom:20px;
+
+        font-size:26px;
+
+    }
+
+    .top-btn{
+
+        right:20px;
+
+    }
+
+}
+
+
+/* ===========================
+SMALL MOBILE
+=========================== */
+
+@media(max-width:480px){
+
+    .subject-hero h1{
+
+        font-size:28px;
+
+    }
+
+    .logo{
+
+        font-size:22px;
+
+    }
+
+    .navbar nav a{
+
+        font-size:14px;
+
+        padding:8px 12px;
+
+    }
+
+    .search-box{
+
+        font-size:15px;
+
+        padding:14px;
+
+    }
+
+}
+
+
+/* ===========================
+SELECTION COLOR
+=========================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:#000;
+
+}
+
+/* ===========================================
+HOME PAGE PATCH
+=========================================== */
+
+.hero{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:60px;
+
+padding:70px 8%;
+
+min-height:80vh;
+
+}
+
+.hero-left{
+
+flex:1;
+
+}
+
+.hero-right{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-right img{
+
+width:420px;
+
+max-width:100%;
+
+animation:floatRobot 4s ease-in-out infinite;
+
+}
+
+.hero h1{
+
+font-size:58px;
+
+line-height:1.2;
+
+margin:20px 0;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+color:#b8c5d6;
+
+line-height:1.8;
+
+max-width:600px;
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 20px;
+
+border-radius:50px;
+
+background:#13233d;
+
+border:1px solid #2a466d;
+
+color:#8dd9ff;
+
+font-size:14px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+margin-top:35px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+padding:14px 30px;
+
+border-radius:14px;
+
+font-weight:600;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.hero-primary{
+
+background:#00bfff;
+
+color:#000;
+
+}
+
+.hero-primary:hover{
+
+transform:translateY(-4px);
+
+}
+
+.hero-secondary{
+
+background:#1b263b;
+
+color:#fff;
+
+border:1px solid #334155;
+
+}
+
+.hero-secondary:hover{
+
+background:#26354f;
+
+}
+/* ===========================================
+HOME PAGE PATCH 2
+Subjects + Features + Contact + Stats
+=========================================== */
+
+
+/* ===========================
+STATS
+=========================== */
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+width:90%;
+
+max-width:1300px;
+
+margin:40px auto 70px;
+
+}
+
+.stat-card{
+
+background:#111827;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+border:1px solid #26364f;
+
+transition:.3s;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#00bfff;
+
+}
+
+.stat-card h2{
+
+font-size:42px;
+
+color:#00d4ff;
+
+margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+color:#b8c5d6;
+
+}
+
+
+/* ===========================
+SECTION TITLE
+=========================== */
+
+.section-title{
+
+text-align:center;
+
+margin:70px 0 45px;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+}
+
+.section-title p{
+
+color:#9fb2c8;
+
+font-size:17px;
+
+}
+
+
+/* ===========================
+SUBJECTS
+=========================== */
+
+.subjects-section{
+
+width:90%;
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+.subjects-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:28px;
+
+}
+
+.subject-card{
+
+background:#111827;
+
+padding:35px;
+
+border-radius:22px;
+
+text-align:center;
+
+border:1px solid #223247;
+
+text-decoration:none;
+
+color:white;
+
+transition:.35s;
+
+}
+
+.subject-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#00d4ff;
+
+box-shadow:0 20px 45px rgba(0,212,255,.18);
+
+}
+
+.subject-icon{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.subject-card h3{
+
+font-size:28px;
+
+margin-bottom:12px;
+
+}
+
+.subject-card p{
+
+color:#aebed2;
+
+line-height:1.7;
+
+margin-bottom:20px;
+
+}
+
+.subject-open{
+
+display:inline-block;
+
+color:#00d4ff;
+
+font-weight:600;
+
+}
+
+
+/* ===========================
+FEATURES
+=========================== */
+
+.features{
+
+width:90%;
+
+max-width:1300px;
+
+margin:80px auto;
+
+}
+
+.feature-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:28px;
+
+}
+
+.feature-card{
+
+background:#111827;
+
+padding:35px;
+
+border-radius:20px;
+
+border:1px solid #26364f;
+
+transition:.3s;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#00d4ff;
+
+}
+
+.feature-icon{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+margin-bottom:12px;
+
+}
+
+.feature-card p{
+
+line-height:1.8;
+
+color:#b8c5d6;
+
+}
+
+
+/* ===========================
+CONTACT
+=========================== */
+
+.contact-section{
+
+width:90%;
+
+max-width:900px;
+
+margin:90px auto;
+
+}
+
+.contact-card{
+
+background:#111827;
+
+padding:50px;
+
+border-radius:22px;
+
+text-align:center;
+
+border:1px solid #26364f;
+
+}
+
+.contact-card h3{
+
+font-size:34px;
+
+margin-bottom:15px;
+
+}
+
+.contact-card p{
+
+color:#b8c5d6;
+
+line-height:1.8;
+
+margin-bottom:30px;
+
+}
+
+
+/* ===========================
+ROBOT ANIMATION
+=========================== */
+
+@keyframes floatRobot{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero p{
+
+margin:auto;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero-right img{
+
+width:100px;
+
+}
+
+.contact-card{
+
+padding:30px 20px;
+
+}
+
+}
+
+
+/* ===========================
+END
+=========================== */
