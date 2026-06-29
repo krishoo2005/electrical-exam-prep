@@ -97,13 +97,7 @@ print()
 def build_prompt(subject, question):
 
     return f"""
-You are an expert Electrical Engineering professor.
 
-Subject:
-{subject}
-
-Question:
-{question}
 
 Answer ONLY the question.
 

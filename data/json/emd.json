@@ -21,50 +21,70 @@
                     "id": "emd_1_2",
                     "question": "Explain in brief the various limitations in design of electrical machines?",
                     "frequency": 5,
-                    "exams": ["summer2022","summer2024","winter2023","winter2024","summer supply 2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022",
+                        "summer2024",
+                        "winter2023",
+                        "winter2024",
+                        "summer supply 2022"
+                    ],
+                    "answer": "Definition: \nElectrical machine design has several limitations that affect its performance and efficiency. \nThese limitations are due to various factors such as material properties, cost, and manufacturing processes. \nThe limitations in design of electrical machines are related to thermal, mechanical, and electrical aspects.\n\nExplanation:\n* Thermal limitations are due to the heating of machines, which can reduce their lifespan and efficiency.\n* Mechanical limitations are related to the strength and durability of materials used in the machine.\n* Electrical limitations are due to the properties of magnetic materials and the efficiency of electrical circuits.\n* Cost and manufacturing limitations also affect the design of electrical machines, as they must be economically viable and easy to produce.\n* Material limitations, such as the availability and properties of materials, also impact the design of electrical machines.\n* Space and weight limitations are also important considerations in the design of electrical machines, especially in applications where size and weight are critical factors."
                 },
                 {
                     "id": "emd_1_3",
                     "question": "Describe the Nameplate of Rotating machines as per standards.?",
                     "frequency": 1,
-                    "exams": ["summer2024"],
-                    "answer": ""
+                    "exams": [
+                        "summer2024"
+                    ],
+                    "answer": "Definition: \nThe nameplate of rotating machines provides essential information about the machine. It is a label attached to the machine that contains details about its characteristics and operating conditions. \n\nExplanation:\n* The nameplate includes the machine's rated power output and voltage.\n* It also specifies the frequency and number of phases of the power supply.\n* The nameplate provides information about the machine's speed and efficiency.\n* It includes details about the machine's insulation class and protection type.\n* The nameplate also contains information about the machine's manufacturer and model number.\n* Additionally, it may include other relevant details such as the machine's weight and dimensions."
                 },
                 {
                     "id": "emd_1_4",
                     "question": "Discuss the Insulating materials class based on thermal consideration.",
                     "frequency": 2,
-                    "exams": ["summer2024","winter2024"],
-                    "answer": ""
+                    "exams": [
+                        "summer2024",
+                        "winter2024"
+                    ],
+                    "answer": "Definition: \nInsulating materials are classified based on thermal consideration to determine their ability to withstand high temperatures. \nInsulating materials are used to prevent electrical current from flowing to unwanted paths. \nInsulating materials are classified into different classes based on thermal consideration.\n\nExplanation:\n* Class Y insulating materials can withstand a temperature of up to 90 degrees Celsius.\n* Class A insulating materials can withstand a temperature of up to 105 degrees Celsius.\n* Class B insulating materials can withstand a temperature of up to 130 degrees Celsius.\n* Class F insulating materials can withstand a temperature of up to 155 degrees Celsius.\n* Class H insulating materials can withstand a temperature of up to 180 degrees Celsius.\n* Class C insulating materials can withstand a temperature of up to 180 degrees Celsius or higher."
                 },
                 {
                     "id": "emd_1_5",
                     "question": "Explain the key principles of design. How do these principles Impact cises experience & overall success of a design? or llustrate in brief principles of elee machine design with a Neat schematic.(",
                     "frequency": 2,
-                    "exams": ["winter2023","summer2024"],
-                    "answer": ""
+                    "exams": [
+                        "winter2023",
+                        "summer2024"
+                    ],
+                    "answer": "Definition: \nElectrical machine design is the process of creating electrical machines such as motors and generators. \nThe key principles of design are based on electromagnetic and mechanical considerations.\n\nExplanation:\n* The design should have a clear understanding of the machine's purpose and requirements.\n* The electromagnetic circuit should be designed to produce the required flux and torque.\n* The mechanical design should ensure the machine's stability and durability.\n* The thermal design should allow for efficient heat transfer and cooling.\n* The design should also consider the machine's efficiency, cost, and environmental impact.\n* The materials used should be suitable for the machine's operating conditions."
                 },
                 {
                     "id": "emd_1_6",
                     "question": "Discuss briefly about electrical properties of Insulating materials?",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nInsulating materials are used to prevent the flow of electrical current. They have high resistance to the flow of electric current. \n\nExplanation:\n* Insulating materials have high resistivity and low conductivity.\n* They have high dielectric strength which is the ability to withstand electric field without breaking down.\n* Insulating materials have low dielectric losses which reduce the energy loss in the material.\n* They have high thermal stability which allows them to operate at high temperatures.\n* Insulating materials have low moisture absorption which reduces the effect of moisture on the material.\n* They have high chemical stability which prevents them from reacting with other materials."
                 },
                 {
                     "id": "emd_1_7",
                     "question": "Explain factors affecting design of machine in detail.",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nThe design of an electrical machine is affected by several factors. These factors determine the performance and efficiency of the machine. \n\nExplanation:\n* The type of material used for the construction of the machine affects its design.\n* The size and shape of the machine are determined by the space available and the power output required.\n* The cooling system used in the machine affects its design and performance.\n* The insulation used in the machine determines its safety and efficiency.\n* The cost of production and maintenance of the machine is also an important factor in its design.\n* The machine's speed and torque requirements also affect its design."
                 },
                 {
                     "id": "emd_1_8",
                     "question": "What is the importance & purpose of specification in design & manufacturing of electrical machines? State the standard specification of transformers.(",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nSpecification is a detailed description of the requirements and characteristics of an electrical machine. It is a crucial document that outlines the necessary parameters and standards for design and manufacturing.\n\nExplanation:\n* Ensures that the machine meets the required performance and safety standards\n* Provides a clear understanding of the machine's capabilities and limitations\n* Helps to prevent errors and misunderstandings during the design and manufacturing process\n* Enables the comparison of different machines and selection of the most suitable one\n* Facilitates the testing and validation of the machine\n* Standard specification of transformers includes parameters such as voltage rating, power rating, frequency, efficiency, and insulation class. \n* The standard specification of transformers is usually defined by international standards such as IEC or IEEE."
                 }
             ]
         },
@@ -75,57 +95,75 @@
                     "id": "emd_2_1",
                     "question": "Explain in detail the design of heating coils",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nHeating coils are electrical devices that convert electrical energy into heat energy. They are used in various applications such as water heaters, ovens, and heaters. \n\nExplanation:\n* The design of heating coils involves selecting the right material for the coil, usually a resistive material like nichrome or copper.\n* The coil is designed to have a specific resistance and power rating to produce the required amount of heat.\n* The coil is usually wound in a specific pattern to increase its surface area and heat transfer.\n* The design also involves considering the insulation and protection of the coil from environmental factors.\n* The coil is connected to a power source and a control system to regulate the heat output.\n* The design should also ensure safe operation and efficient heat transfer to the surrounding medium."
                 },
                 {
                     "id": "emd_2_2",
                     "question": " Explain the design of a choke coil. ",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nA choke coil is an inductive coil used to block or choke high frequency signals in a circuit. It is a type of inductor that is designed to have high impedance at high frequencies. \n\nExplanation:\n* The design of a choke coil involves selecting the correct type and amount of magnetic core material to achieve the desired inductance and impedance.\n* The coil is typically wound with a specific type of wire, such as copper or aluminum, to minimize losses and maximize efficiency.\n* The number of turns and the diameter of the coil are also critical factors in determining the inductance and impedance of the choke coil.\n* The core material can be either air, ferrite, or iron, depending on the application and required frequency range.\n* The choke coil is often used in filter circuits to block high frequency noise and prevent interference with other components.\n* The design of a choke coil must also consider factors such as temperature, voltage, and current ratings to ensure reliable operation."
                 },
                 {
                     "id": "emd_2_3",
                     "question": ". Give the design procedure for choke coil design with relevant formulas. ",
                     "frequency": 2,
-                    "exams": ["summer2024","winter2024"],
-                    "answer": ""
+                    "exams": [
+                        "summer2024",
+                        "winter2024"
+                    ],
+                    "answer": "Design Procedure:\n1. Determine the required inductance and resistance of the choke coil.\n2. Choose the core material and calculate the core area.\n3. Calculate the number of turns required using the formula N = sqrt(L/R), where N is the number of turns, L is the inductance, and R is the resistance.\n4. Calculate the wire diameter using the formula d = sqrt(4I/(piJ)), where d is the wire diameter, I is the current, and J is the current density.\n5. Calculate the length of the wire using the formula l = N * d, where l is the length of the wire.\n6. Calculate the coil dimensions using the formula D = (l + d) / pi, where D is the coil diameter.\n\nFormulas:\nThe inductance of the choke coil is given by L = (N^2 * A) / l, where A is the core area.\nThe resistance of the choke coil is given by R = (rho * l) / (A * N), where rho is the resistivity of the wire material.\nThe quality factor of the choke coil is given by Q = (2 * pi * f * L) / R, where f is the frequency."
                 },
                 {
                     "id": "emd_2_4",
                     "question": ".Explain the design procedure of a starter used in a DC shunt motor.",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nA starter is a device used to start a DC shunt motor. It is used to limit the high inrush current during starting of the motor.\n\nExplanation:\n* The design procedure of a starter used in a DC shunt motor involves selecting a suitable type of starter such as a three-point starter or a four-point starter.\n* The starter should be designed to handle the high inrush current during starting of the motor.\n* The starter should have a resistance in series with the armature to limit the inrush current.\n* The resistance should be gradually cut out as the motor gains speed.\n* The starter should have a no-volt release coil to disconnect the motor from the supply in case of a power failure.\n* The starter should be designed to provide protection to the motor against overloads and short circuits."
                 },
                 {
                     "id": "emd_2_5",
                     "question": ".Explain the design procedure of an electromagnet.",
                     "frequency": 1,
-                    "exams": ["winter2022"],
-                    "answer": ""
+                    "exams": [
+                        "winter2022"
+                    ],
+                    "answer": "Definition: \nAn electromagnet is a type of magnet in which the magnetic field is produced by an electric current. The magnetic field is generated when electric current flows through a coil of wire wrapped around a core material.\n\nExplanation:\n* The design of an electromagnet starts with selecting the core material, which can be iron, nickel, or ferrite.\n* The next step is to determine the number of turns of the coil, which depends on the required magnetic field strength.\n* The wire size and type are also important considerations, as they affect the resistance and efficiency of the electromagnet.\n* The coil is then wrapped around the core material, and the ends are connected to a power source.\n* The electromagnet is then tested and optimized to achieve the desired magnetic field strength and efficiency.\n* The design process also involves considering factors such as heat dissipation, insulation, and protection from overcurrent and voltage surges."
                 },
                 {
                     "id": "emd_2_6",
                     "question": "Explain the fundamental differences in the design principles for AC & DC machines. How do these differences impact factors like the magnetic circuit, windings, and commutation? ",
                     "frequency": 1,
-                    "exams": ["winter2023"],
-                    "answer": ""
+                    "exams": [
+                        "winter2023"
+                    ],
+                    "answer": "Definition: \nThe design principles for AC and DC machines differ in terms of their magnetic circuit, windings, and commutation. \n\nExplanation:\n* AC machines use a rotating magnetic field to produce torque, while DC machines use a stationary magnetic field.\n* The windings in AC machines are designed to carry alternating current, while DC machines have windings that carry direct current.\n* The commutation process in DC machines involves the use of brushes and a commutator to reverse the direction of current flow, while AC machines do not require commutation.\n* The magnetic circuit in AC machines is designed to produce a rotating magnetic field, while DC machines have a stationary magnetic field.\n* The design of AC machines takes into account the effects of reactance and inductance, while DC machines are primarily concerned with resistance.\n* The windings in AC machines are typically designed to be more complex and have multiple poles, while DC machines have a simpler winding design."
                 },
                 {
                     "id": "emd_2_7",
                     "question": "What are the primary differences between AC & DC windings in terms of design considerations and their applications in electrical apparatus? [",
                     "frequency": 1,
-                    "exams": ["winter2023"],
-                    "answer": ""
+                    "exams": [
+                        "winter2023"
+                    ],
+                    "answer": "Definition: \nAC and DC windings are two types of electrical windings used in various electrical apparatus. The primary difference between them lies in the type of current they carry.\n\nExplanation:\n* AC windings are designed to carry alternating current and are commonly used in transformers, induction motors, and generators.\n* DC windings are designed to carry direct current and are commonly used in DC motors, DC generators, and rectifier circuits.\n* AC windings require consideration of skin effect, proximity effect, and eddy current losses, which are not significant in DC windings.\n* DC windings require consideration of commutation and armature reaction, which are not significant in AC windings.\n* The design of AC windings involves consideration of the number of turns, wire size, and insulation, while DC windings require consideration of the number of turns, wire size, and commutator design.\n* The applications of AC windings include power transmission and distribution, while DC windings are used in electronic devices, motor control, and power supplies."
                 },
                 {
                     "id": "emd_2_8",
                     "question": "Show the simplex lap-wound armature with a winding table of a 4-pole generator with 24 conductors",
                     "frequency": 2,
-                    "exams": ["summer2024","winter2024"],
-                    "answer": ""
+                    "exams": [
+                        "summer2024",
+                        "winter2024"
+                    ],
+                    "answer": "Definition: \nA simplex lap-wound armature is a type of armature winding used in electrical machines. It is used in generators and motors to convert electrical energy into mechanical energy or vice versa.\n\nConstruction:\n• The armature has 24 conductors and 4 poles.\n• The winding is lap connected, meaning that the number of parallel paths is equal to the number of poles.\n• The conductors are connected in series to form a coil, and the coils are connected in parallel to form the armature winding.\n• The simplex lap-wound armature has a specific winding pattern to ensure proper distribution of current and voltage.\n• The winding table is used to determine the sequence of connections between the conductors and the commutator segments.\n• The winding table helps to identify the number of turns in each coil and the direction of current flow in each conductor."
                 }
             ]
         },
@@ -134,59 +172,76 @@
             "questions": [
                 {
                     "id": "emd_3_1",
-                    "question": ")What is the concentric winding & what are the types? ",
+                    "question": "What is the concentric winding & what are the types? ",
                     "frequency": 1,
-                    "exams": ["summer supply 2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer supply 2022"
+                    ],
+                    "answer": "Definition: \nConcentric winding is a type of winding used in electrical machines where multiple windings are placed concentrically, one inside the other. \nIt is used to reduce the space required for the windings and to improve the efficiency of the machine.\n\nExplanation:\n* Concentric winding is used in transformers and induction motors.\n* It consists of multiple windings with different numbers of turns.\n* The windings are placed one inside the other to reduce the space required.\n* The concentric winding helps to reduce the leakage reactance and improves the efficiency of the machine.\n* It is used in high voltage applications where space is limited.\n* The concentric winding is more complex and difficult to manufacture than other types of windings.\n\nTypes:\n* Single layer concentric winding – used in small transformers and motors\n* Multi layer concentric winding – used in large transformers and motors\n* Interleaved concentric winding – used in high voltage applications where space is limited"
                 },
                 {
                     "id": "emd_3_2",
                     "question": "What is the Role of equalizer connections? why do we dispense equalizer connection in case of wave winding? ",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nEqualizer connections are used to connect the coils of a dc machine in parallel. \nThis connection helps to balance the voltage across each coil.\n\nNeed/Importance: \n• Equalizer connections help to reduce the voltage difference between the parallel paths of a multi-path armature winding.\n• They ensure that the current is divided equally among the parallel paths.\n• This helps to prevent overheating of the coils due to unequal current distribution.\n• Equalizer connections also help to reduce the voltage fluctuations in the armature winding.\n• In lap winding, equalizer connections are necessary to balance the voltage across each parallel path.\n• However, in wave winding, the number of parallel paths is two, so equalizer connections are not required.\n• As a result, we dispense with equalizer connections in case of wave winding."
                 },
                 {
                     "id": "emd_3_3",
                     "question": "Model an output equation for the 3-phase Induction motor. ",
                     "frequency": 1,
-                    "exams": ["summer2024"],
-                    "answer": ""
+                    "exams": [
+                        "summer2024"
+                    ],
+                    "answer": "Definition: \nThe output equation for a 3-phase induction motor is a mathematical expression that relates the motor's output power to its input parameters. It is used to predict the motor's performance under various operating conditions.\n\nExplanation:\n* The output power of a 3-phase induction motor is given by the equation: P_out = (3 * m * V_s * I_s * cos(θ)) / (2 * π * p)\n* Where P_out is the output power, m is the number of phases, V_s is the supply voltage, I_s is the supply current, θ is the power factor angle, and p is the number of poles.\n* The equation shows that the output power is directly proportional to the supply voltage, supply current, and the number of phases.\n* The power factor angle θ affects the output power, with a higher power factor resulting in higher output power.\n* The number of poles p also affects the output power, with a higher number of poles resulting in lower output power.\n* The equation can be used to analyze the motor's performance and optimize its design for specific applications."
                 },
                 {
                     "id": "emd_3_4",
-                    "question": ")What is the effect of chording & distributing the winding in slots, in the emf generated.",
+                    "question": "What is the effect of chording & distributing the winding in slots, in the emf generated.",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nChording and distributing the winding in slots is a technique used in electrical machine design to reduce the emf generated. \nChording reduces the emf by reducing the flux linkage.\n\nExplanation:\n* Chording reduces the flux linkage by reducing the number of turns in each coil.\n* Distributing the winding in slots reduces the emf by reducing the magnetic flux density.\n* The emf generated is reduced due to the reduction in the rate of change of flux linkage.\n* Chording and distributing the winding also helps to reduce the harmonics in the emf generated.\n* The reduction in emf helps to reduce the voltage rating of the machine.\n* This technique is commonly used in the design of alternators and synchronous machines."
                 },
                 {
                     "id": "emd_3_5",
                     "question": ")Illustrate the design procedure of stator of squirrel cage Induction machine with the Help of formulae. ",
                     "frequency": 1,
-                    "exams": ["winter2022"],
-                    "answer": ""
+                    "exams": [
+                        "winter2022"
+                    ],
+                    "answer": "Definition: \nThe design procedure of the stator of a squirrel cage induction machine involves calculating the dimensions and parameters of the stator to meet the required specifications.\n\nExplanation:\n* The first step is to calculate the stator bore diameter using the formula D = (4 * power / (pi * f * B * k))^(1/3) where power is the output power, f is the frequency, B is the flux density and k is the constant.\n* The next step is to calculate the stator core length using the formula L = (power * 60 / (2 * pi * f * B * k)) where power is the output power, f is the frequency, B is the flux density and k is the constant.\n* The number of stator slots is calculated using the formula Q = (2 * pi * D * f) / (N * k) where D is the stator bore diameter, f is the frequency, N is the number of poles and k is the constant.\n* The stator winding is designed using the formula E = (4 * f * N * phi) / (pi * k) where E is the induced voltage, f is the frequency, N is the number of turns, phi is the flux and k is the constant.\n* The stator current is calculated using the formula I = (power / (sqrt(3) * E * pf)) where power is the output power, E is the induced voltage and pf is the power factor."
                 },
                 {
                     "id": "emd_3_6",
                     "question": "Illustrate the procedure of computation of losses in rotor bars & end ring of Induction machine. ",
                     "frequency": 2,
-                    "exams": ["winter2024", "summer2024"],
-                    "answer": ""
+                    "exams": [
+                        "winter2024",
+                        "summer2024"
+                    ],
+                    "answer": "Definition: \nComputation of losses in rotor bars and end ring of an induction machine is an important aspect of electrical machine design. It involves calculating the energy lost as heat in the rotor bars and end ring due to electrical resistance.\n\nExplanation:\n* The losses in rotor bars are calculated using the formula for resistive losses, which is I^2R, where I is the current flowing through the bar and R is the resistance of the bar.\n* The resistance of the rotor bar is calculated using the formula R = ρ(L/A), where ρ is the resistivity of the material, L is the length of the bar, and A is the cross-sectional area of the bar.\n* The current flowing through the rotor bar is calculated using the equivalent circuit of the induction machine.\n* The losses in the end ring are calculated using a similar approach, taking into account the resistance of the end ring and the current flowing through it.\n* The total losses in the rotor are the sum of the losses in the rotor bars and the end ring.\n* These losses are important to consider in the design of an induction machine, as they can affect the efficiency and performance of the machine."
                 },
                 {
                     "id": "emd_3_7",
                     "question": "What are the primary design considerations for the stator of an Induction motor & How do they impact motor performance? [",
                     "frequency": 1,
-                    "exams": ["winter2023"],
-                    "answer": ""
+                    "exams": [
+                        "winter2023"
+                    ],
+                    "answer": "Definition: \nThe primary design considerations for the stator of an Induction motor include the type of winding, material, and construction. \n\nExplanation: \n* The stator winding type and material affect the motor's efficiency and cost.\n* The stator core material and design impact the motor's magnetic properties and losses.\n* The stator slot design and winding configuration influence the motor's performance and power factor.\n* The stator frame and cooling system design impact the motor's thermal performance and reliability.\n* The stator insulation system design affects the motor's electrical integrity and lifespan.\n* The stator design also considers the motor's operating conditions, such as voltage, frequency, and load."
                 },
                 {
                     "id": "emd_3_8",
                     "question": "Define specific magnetic Loadings & specific electric Loadings. Derive the output eqn of an Induction motor.",
                     "frequency": 1,
-                    "exams": ["summer2025"],
-                    "answer": ""
+                    "exams": [
+                        "summer2025"
+                    ],
+                    "answer": "Definition: \nSpecific magnetic loadings refer to the magnetic flux per unit area of a magnetic material, while specific electric loadings refer to the electric current per unit area of a conductor.\n\nExplanation:\n* Specific magnetic loadings are measured in teslas or webers per square meter.\n* Specific electric loadings are measured in amperes per square meter.\n* The output equation of an induction motor can be derived from the equivalent circuit.\n* The equivalent circuit consists of a rotor circuit and a stator circuit.\n* The output power of the induction motor is given by the product of the rotor current, rotor voltage, and the power factor.\n* The output equation is P_out = (3 * I_r^2 * R_2) / s, where P_out is the output power, I_r is the rotor current, R_2 is the rotor resistance, and s is the slip."
                 }
             ]
         },
@@ -197,57 +252,74 @@
                     "id": "emd_4_1",
                     "question": "What are the different modes of heat dissipation in electric machines? What is thermal resistance & what is its unit?",
                     "frequency": 1,
-                    "exams": ["summer2024"],
-                    "answer": ""
+                    "exams": [
+                        "summer2024"
+                    ],
+                    "answer": "Definition: \nHeat dissipation in electric machines refers to the process of removing excess heat generated during operation. Thermal resistance is a measure of how easily heat can flow through a material.\n\nExplanation:\n* Convection is a mode of heat dissipation where heat is transferred through a fluid medium.\n* Conduction is a mode of heat dissipation where heat is transferred through direct contact between particles.\n* Radiation is a mode of heat dissipation where heat is transferred through electromagnetic waves.\n* Thermal resistance is the opposition to heat flow and is typically denoted by the symbol Rth.\n* The unit of thermal resistance is degrees Celsius per watt, often represented as °C/W.\n* Heat dissipation is crucial in electric machines to prevent overheating and ensure reliable operation.\n* Proper heat dissipation can be achieved through design considerations, such as providing adequate ventilation and using materials with high thermal conductivity."
                 },
                 {
                     "id": "emd_4_2",
                     "question": "Explain and Compare the distribution & power transformers? ",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nDistribution and power transformers are electrical devices used to transfer electrical energy from one circuit to another through electromagnetic induction. They are essential components in power systems, allowing for efficient transmission and distribution of electricity.\n\nExplanation:\n* Distribution transformers are used to step down high voltage to low voltage for consumer use, typically in residential and commercial areas.\n* Power transformers are used to step up or step down high voltages for transmission and distribution over long distances.\n* Distribution transformers are usually smaller and have lower power ratings compared to power transformers.\n* Power transformers are designed to handle higher voltage and current levels, making them larger and more complex.\n* Distribution transformers are often installed in public spaces, such as on utility poles or in underground vaults, while power transformers are typically found in substations or power plants.\n* The insulation and cooling systems of power transformers are more advanced due to the higher voltage and current levels they handle."
                 },
                 {
                     "id": "emd_4_3",
                     "question": "Show various types of ventilating systems in accordance with the provision of cooling duty & explain how the air passes over the heated part of the machine.",
                     "frequency": 2,
-                    "exams": ["winter2024", "summer2024"],
-                    "answer": ""
+                    "exams": [
+                        "winter2024",
+                        "summer2024"
+                    ],
+                    "answer": "Definition: \nVentilating systems are used to cool electrical machines by circulating air over the heated parts. \nThese systems are designed to provide a specific cooling duty.\n\nExplanation:\n* Axial flow fans are used to circulate air over the heated parts of the machine.\n* Radial flow fans are used to force air through the machine and out of the enclosure.\n* Centrifugal fans are used to create a high-pressure airflow that can be directed over the heated parts.\n* Pipe ventilating systems use a network of pipes to distribute air throughout the machine.\n* Duct ventilating systems use a system of ducts to direct air over the heated parts of the machine.\n* Forced draft ventilating systems use a fan to force air through the machine and out of the enclosure."
                 },
                 {
                     "id": "emd_4_4",
-                    "question": ")What are sources of heat generation in a rotating electrical machine? ",
+                    "question": "What are sources of heat generation in a rotating electrical machine? ",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nHeat generation in a rotating electrical machine is caused by various losses that occur during its operation. These losses lead to an increase in temperature, which can affect the machine's performance and lifespan. \n\nExplanation:\n* Copper losses in the windings due to resistance\n* Core losses in the magnetic material due to hysteresis and eddy currents\n* Friction losses in the bearings and other moving parts\n* Windage losses due to air resistance and friction\n* Stray losses in the machine's other components, such as the shaft and housing\n* Eddy current losses in the conductors and other metal parts"
                 },
                 {
                     "id": "emd_4_5",
                     "question": "Write a short note on Hydrogen cooling.",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nHydrogen cooling is a method used to cool electrical machines, particularly large generators and motors. It involves the use of hydrogen gas as a cooling medium due to its high thermal conductivity and low density.\n\nExplanation:\n* Hydrogen cooling is used in large electrical machines because it is more efficient than air cooling.\n* The hydrogen gas is circulated through the machine to absorb heat from the windings and other components.\n* The heated hydrogen gas is then cooled by a heat exchanger, allowing it to be reused.\n* Hydrogen cooling allows for higher power densities and smaller machine sizes.\n* The use of hydrogen also reduces the risk of fire and explosion compared to other cooling methods.\n* Hydrogen cooling systems require specialized equipment and safety precautions due to the flammable nature of hydrogen."
                 },
                 {
                     "id": "emd_4_6",
                     "question": "Explain selection of length of air gap & explain factors affecting length of air gap, design of Rotor. [",
                     "frequency": 1,
-                    "exams": ["winter2023"],
-                    "answer": ""
+                    "exams": [
+                        "winter2023"
+                    ],
+                    "answer": "Definition: \nThe length of air gap in electrical machines is the distance between the rotor and stator. \nThe selection of air gap length is important for efficient machine operation.\n\nExplanation:\n* The length of air gap affects the magnetic flux density and permeability of the magnetic circuit.\n* A shorter air gap length reduces the reluctance of the magnetic circuit and increases the flux density.\n* The length of air gap is affected by factors such as the type of machine, speed, and power rating.\n* Mechanical considerations such as bearing clearance and rotor dynamics also affect the air gap length.\n* The design of the rotor also plays a crucial role in determining the air gap length, as it must be strong enough to withstand the mechanical stresses.\n* The rotor design includes the selection of materials, shape, and size to minimize the air gap length while ensuring reliable operation."
                 },
                 {
                     "id": "emd_4_7",
                     "question": "Discuss the impact of skewed rotor slots on the operation & performance of squirrel cage rotors in Induction motors. [",
                     "frequency": 1,
-                    "exams": ["winter2023"],
-                    "answer": ""
+                    "exams": [
+                        "winter2023"
+                    ],
+                    "answer": "Definition: \nSkewed rotor slots in squirrel cage rotors refer to the arrangement of rotor bars at an angle to the axis of rotation. \nThis design feature is used to reduce certain unwanted effects in induction motors.\n\nExplanation:\n* Reduces magnetic locking or cogging effect between stator and rotor teeth\n* Minimizes vibration and noise in the motor\n* Helps to reduce the harmonic content in the motor\n* Improves the overall efficiency of the motor by reducing energy losses\n* Enhances the motor's stability and reliability during operation\n* Allows for smoother torque production and better motor performance"
                 },
                 {
                     "id": "emd_4_8",
-                    "question": "the impact of skewed rotor slots on the operation & performance of squirrel cage rotors in Induction motors. ",
+                    "question": "The impact of skewed rotor slots on the operation & performance of squirrel cage rotors in Induction motors. ",
                     "frequency": 1,
-                    "exams": ["summer2025"],
-                    "answer": ""
+                    "exams": [
+                        "summer2025"
+                    ],
+                    "answer": "Definition: \nSkewed rotor slots in squirrel cage rotors of induction motors refer to the arrangement of rotor bars at an angle to the stator teeth. This design feature affects the operation and performance of the motor.\n\nExplanation:\n* Reduces magnetic locking or cogging effect between stator and rotor teeth\n* Minimizes vibration and noise in the motor\n* Improves the motor's running performance and efficiency\n* Helps to reduce the magnetic flux harmonics\n* Enhances the overall reliability and lifespan of the motor\n* Allows for smoother torque production and reduced torque ripple"
                 }
             ]
         },
@@ -258,50 +330,66 @@
                     "id": "emd_5_1",
                     "question": "Give the advantages of computer-aided designing of transformers",
                     "frequency": 1,
-                    "exams": ["summer2022"],
-                    "answer": ""
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "Definition: \nComputer-aided designing of transformers is a process that uses computer software to design and analyze transformers. \nIt helps to create a design that meets the required specifications and standards.\n\nAdvantages:\n• Reduces design time and cost by automating the design process\n• Improves design accuracy by minimizing human errors\n• Allows for easy modification and optimization of the design\n• Enables the analysis of different design scenarios and options\n• Helps to optimize the performance and efficiency of the transformer"
                 },
                 {
                     "id": "emd_5_2",
                     "question": "Illustrate the types of tests performed on transformers (x'mers) as per the Standards for estimation of leakage reactance, Resistance of winding, No Load current, & losses. ",
                     "frequency": 2,
-                    "exams": ["summer2024", "winter2024"],
-                    "answer": ""
+                    "exams": [
+                        "summer2024",
+                        "winter2024"
+                    ],
+                    "answer": "Definition: \nTransformer tests are performed to determine the electrical characteristics of a transformer. \nThese tests help in estimating the leakage reactance, resistance of winding, no load current, and losses.\n\nExplanation:\n* Open Circuit Test or No Load Test is used to measure the no load current and losses.\n* Short Circuit Test is used to measure the leakage reactance and resistance of winding.\n* Polarization Index Test is used to check the condition of the insulation.\n* DC Resistance Test is used to measure the resistance of the winding.\n* Temperature Test is used to check the temperature rise of the transformer.\n* Impedance Test is used to measure the impedance of the transformer."
                 },
                 {
                     "id": "emd_5_3",
                     "question": "Illustrate the step-by-step design procedure for the magnetic frame of a three-phase power transformer (X'mer) with relevant formulae.",
                     "frequency": 2,
-                    "exams": ["winter2024","winter supply 2024"],
-                    "answer": ""
+                    "exams": [
+                        "winter2024",
+                        "winter supply 2024"
+                    ],
+                    "answer": "Definition: \nThe magnetic frame of a three-phase power transformer is the core that carries the magnetic flux. \nIt is made of laminated steel to reduce eddy currents.\n\nDesign Procedure:\n1. Determine the required core area using the formula A = (V * 10^4) / (4 * K * f * B), where V is the voltage, K is the winding factor, f is the frequency, and B is the flux density.\n2. Choose the core material and calculate the number of laminations required.\n3. Calculate the core dimensions using the formula for the area and the required magnetic flux.\n4. Determine the window area for the windings using the formula Wa = (Pi * D^2) / 4, where D is the diameter of the core.\n5. Calculate the core weight and the total transformer weight.\n6. Check the design for efficiency and make necessary adjustments."
                 },
                 {
                     "id": "emd_5_4",
                     "question": "Discuss the significance of temperature rise limits in electrical machines & their impact on machine performance & longevity. ",
                     "frequency": 1,
-                    "exams": ["winter2023"],
-                    "answer": ""
+                    "exams": [
+                        "winter2023"
+                    ],
+                    "answer": "Definition: \nTemperature rise limits in electrical machines refer to the maximum allowed increase in temperature during operation. \nThis limit is crucial for ensuring the machine's performance and longevity.\n\nExplanation:\n* Temperature rise limits affect the machine's insulation life and overall performance.\n* Exceeding these limits can lead to reduced machine life and increased maintenance costs.\n* Temperature rise limits are determined by the machine's design, materials, and operating conditions.\n* The limits are typically specified by the manufacturer and are based on industry standards.\n* Exceeding the temperature rise limits can cause damage to the machine's windings, bearings, and other components.\n* Regular monitoring and maintenance are necessary to ensure that the machine operates within the specified temperature rise limits."
                 },
                 {
                     "id": "emd_5_5",
                     "question": "Explain how the cooling time constant is calculated & its importance in predicting the rate of temperature decrease in an electrical machine.?",
                     "frequency": 1,
-                    "exams": ["winter2023"],
-                    "answer": ""
+                    "exams": [
+                        "winter2023"
+                    ],
+                    "answer": "Definition: \nThe cooling time constant is a measure of how quickly an electrical machine cools down after being turned off. It is an important parameter in predicting the rate of temperature decrease in an electrical machine.\n\nExplanation:\n* The cooling time constant is calculated using the thermal resistance and thermal capacitance of the machine.\n* It is expressed in units of time, usually seconds or minutes.\n* A smaller cooling time constant indicates that the machine will cool down quickly, while a larger value indicates a slower cooling rate.\n* The cooling time constant is affected by factors such as the machine's design, materials, and operating conditions.\n* It is used to predict the temperature of the machine over time, allowing designers to ensure that the machine operates within a safe temperature range.\n* The cooling time constant is also used to determine the minimum time required for the machine to cool down before it can be safely restarted."
                 },
                 {
                     "id": "emd_5_6",
                     "question": "Discuss the factors that influence the heating time constant & its relevance in different types of electrical machines.? ",
                     "frequency": 1,
-                    "exams": ["winter2023"],
-                    "answer": ""
+                    "exams": [
+                        "winter2023"
+                    ],
+                    "answer": "Definition: \nThe heating time constant is a measure of how quickly an electrical machine heats up or cools down. It is influenced by several factors.\n\nExplanation:\n* The type of material used in the machine's construction affects its heating time constant, with some materials having higher thermal conductivity than others.\n* The size and shape of the machine also play a role, with larger machines generally having longer heating time constants.\n* The cooling system used, such as air or water cooling, can significantly impact the heating time constant.\n* The operating conditions, including the load and ambient temperature, also influence the heating time constant.\n* The design of the machine's windings and insulation can affect its thermal performance and heating time constant.\n* The presence of ventilation or heat sinks can also impact the heating time constant of an electrical machine."
                 },
                 {
                     "id": "emd_5_7",
                     "question": "Explain in detail the mechanical forces that are generated in a transformer (x'mer) during short-circuit conditions.?",
                     "frequency": 1,
-                    "exams": ["winter2023"],
-                    "answer": ""
+                    "exams": [
+                        "summer2025"
+                    ],
+                    "answer": "Definition: \nMechanical forces in a transformer during short-circuit conditions are forces that act on the transformer's internal components. These forces are caused by the interaction of magnetic fields and currents.\n\nExplanation:\n* The short-circuit current generates a high magnetic field that interacts with the windings and core.\n* The magnetic field produces forces that act on the windings, causing them to move or deform.\n* The forces can be axial, radial, or tangential, depending on the direction of the magnetic field and current.\n* The axial forces act along the length of the winding, while the radial forces act outward from the center of the winding.\n* The tangential forces act in a circular direction, causing the winding to rotate or twist.\n* These forces can cause damage to the transformer's internal components, such as the windings, core, and insulation."
                 }
             ]
         }
