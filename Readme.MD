@@ -1,83 +1,190 @@
-# ExamHub — 7th Sem Electrical Engineering
+# ⚡ Electrical Exam Prep
 
-A clean, fast exam prep website for electrical engineering students. No login. No ads. Fully free.
+An AI-powered Electrical Engineering Exam Preparation Platform designed for diploma and engineering students.
 
-## Features
-- 5 subjects: SGP, CSE, SGT, PPE, EMD
-- Questions sorted by exam frequency (most repeated on top)
-- ⭐ Important section = questions that appeared 2+ times
-- Copy answer button
-- AI-powered Q&A (Ask AI anything)
-- Works on mobile
+The platform helps students prepare for semester examinations by providing previous year questions, AI-generated answers, unit-wise organization, and an intelligent chatbot for doubt solving.
 
 ---
 
-## How to Add Questions & Answers
+## 🚀 Features
 
-### For SGP (already has questions):
-Open `data/sgp.py`. Find the question, paste your answer between the triple quotes:
+### 📚 Previous Year Questions
+- Subject-wise organization
+- Unit-wise questions
+- Exam frequency tracking
+- Simple and clean interface
 
-```python
-"answer": """Your answer goes here.
+### 🤖 AI Answer Generation
+- Automatically generates university-style answers
+- Simple English
+- Structured format with headings
+- Point-wise explanations
+- Supports definitions, working, advantages, disadvantages, applications, characteristics, etc.
+- No unnecessary repetition
 
-Can be multiple paragraphs.
-Just write normally."""
-```
+### 🔄 AI Answer Regeneration Tool
+Built a Python utility that can:
 
-### For other subjects (CSE, SGT, PPE, EMD):
-Open `data/cse.py` (or whichever subject). Copy this block and paste inside the unit's `questions` list:
+- Regenerate a single answer
+- Regenerate multiple answers
+- Regenerate an entire unit
+- Regenerate a complete subject
+- Search questions by keyword
+- Preserve JSON structure automatically
 
-```python
-{
-    "id": "cse_1_1",          # unique ID: subject_unit_number
-    "question": "Your question here",
-    "frequency": 2,           # how many times it came in exam
-    "exams": ["S-2022", "W-2023"],  # which exams
-    "answer": """Your answer here"""
-},
-```
+### 💬 AI Chatbot
+- Integrated Google Gemini API
+- Answers student doubts instantly
+- Context-aware responses
 
----
+### 📂 JSON-Based Database
+- Stores all questions and answers
+- Fast loading
+- Easy maintenance
+- Scalable for new subjects
 
-## Run Locally
-
-```bash
-pip install -r requirements.txt
-export ANTHROPIC_API_KEY=your_key_here
-python app.py
-```
-Open http://localhost:5000
-
----
-
-## Deploy on Render (Free)
-
-1. Push this folder to GitHub
-2. Go to render.com → New Web Service → Connect your repo
-3. Add environment variable: `ANTHROPIC_API_KEY = your_key`
-4. Build command: `pip install -r requirements.txt`
-5. Start command: `gunicorn app:app`
-6. Deploy ✅
+### 🎯 Exam Focused
+- Previous year question frequency
+- Unit-wise preparation
+- Easy revision
+- Student-friendly UI
 
 ---
 
-## Project Structure
+# 🛠 Tech Stack
+
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Backend
+
+- Python
+- Flask
+
+## AI
+
+- Google Gemini API
+- Groq API
+- Llama 3.3 70B Versatile
+
+## Database
+
+- JSON
+
+## Python Libraries
+
+- OpenAI SDK
+- python-dotenv
+- json
+- os
+- time
+
+---
+
+# 📂 Project Structure
 
 ```
-examhub/
-├── app.py                  # Flask backend + AI route
+electrical-exam-prep
+│
+├── app.py
 ├── requirements.txt
-├── Procfile                # for deployment
-├── data/
-│   ├── sgp.py              # ✅ SGP questions (paste answers here)
-│   ├── cse.py              # paste CSE questions here
-│   ├── sgt.py              # paste SGT questions here
-│   ├── ppe.py              # paste PPE questions here
-│   └── emd.py              # paste EMD questions here
-├── templates/
-│   ├── index.html          # landing page
-│   └── subject.html        # question/answer page
-└── static/
-    ├── css/style.css       # ALL styles
-    └── js/main.js          # copy, tabs, AI chat
+├── generate_json.py
+├── generate_answers.py
+├── regenerate_answer.py
+│
+├── data
+│   └── json
+│
+├── templates
+│   ├── index.html
+│   └── subject.html
+│
+├── static
+│   ├── css
+│   ├── js
+│   └── images
+│
+└── README.md
 ```
+
+---
+
+# ✨ Key Functionalities
+
+- AI-powered answer generation
+- AI chatbot
+- Previous year questions
+- Unit-wise navigation
+- Frequency analysis
+- Search functionality
+- Automatic JSON generation
+- Automatic JSON updating
+- Responsive interface
+- Fast loading
+- Easy content management
+
+---
+
+# 🔧 Automation Tools
+
+The project includes Python automation scripts for maintaining the question bank.
+
+### generate_json.py
+
+Automatically creates JSON files for all subjects and units.
+
+### generate_answers.py
+
+Automatically generates answers only for questions whose answers are blank.
+
+### regenerate_answer.py
+
+Allows regeneration of:
+
+- Single Answer
+- Multiple Answers
+- Complete Unit
+- Entire Subject
+
+without affecting other existing answers.
+
+---
+
+# 📈 Future Improvements
+
+- PDF Notes
+- Cheat Sheet Generator
+- Infographic Answers
+- Diagram Library
+- Bookmark Questions
+- Advanced Search
+- RAG-based AI Assistant
+- User Authentication
+- Admin Dashboard
+
+---
+
+# 🎯 Target Users
+
+- Diploma Students
+- Electrical Engineering Students
+- Semester Examination Preparation
+
+
+---
+
+# 📜 License
+
+This project is developed for educational purposes.
+
+---
+
+# 👨‍💻 Developer
+
+Krushna
+
+GitHub:
+https://github.com/krishoo2005
