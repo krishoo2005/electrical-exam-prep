@@ -2,67 +2,87 @@
     "code": "CSE",
     "name": "Control System Engineering",
     "description": "Previous Year Exam Questions",
-    "notes_url":"https://drive.google.com/drive/folders/1KwEm3rKQXmz6H5cz6so08qhieyiOzG30",
-    "papers_url":"https://drive.google.com/drive/folders/1d0pSGauwOXZxVchd6tXTf7UtBxLfsGHt",
+    "notes_url": "https://drive.google.com/drive/folders/1KwEm3rKQXmz6H5cz6so08qhieyiOzG30",
+    "papers_url": "https://drive.google.com/drive/folders/1d0pSGauwOXZxVchd6tXTf7UtBxLfsGHt",
     "units": [
         {
             "title": "Unit 1",
             "questions": [
                 {
                     "id": "cse_1_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
+                    "question": ")Explain sensitivity. What are the effects of feedback on sensitivity?",
+                    "frequency": 1,
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "**Introduction to Sensitivity**\nSensitivity refers to the measure of how much the output of a control system changes when there are changes in the system parameters or input. It is an important aspect of control system engineering as it helps in understanding the stability and performance of the system.\n\n**Definition of Sensitivity**\nSensitivity is defined as the ratio of the percentage change in the output to the percentage change in the parameter. It is usually denoted by the symbol S.\n\n**Effects of Feedback on Sensitivity**\nThe effects of feedback on sensitivity can be summarized as follows:\n* Feedback reduces the sensitivity of the system to parameter variations\n* Feedback improves the stability of the system\n* Feedback reduces the effect of disturbances on the system\n* Feedback improves the accuracy of the system\n* Feedback reduces the sensitivity to changes in the input\n\n**Key Points**\nThe use of feedback in a control system has several advantages, including reduced sensitivity to parameter variations and improved stability. However, it also has some disadvantages, such as increased complexity and potential for oscillations. Overall, the effects of feedback on sensitivity are beneficial, as they help to improve the performance and stability of the system."
                 },
                 {
                     "id": "cse_1_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
+                    "question": "Explain the signal flow graph in detail with the help of Mason's Gain Formula.",
+                    "frequency": 3,
+                    "exams": [
+                        "summer2022",
+                        "summer2023",
+                        "winter2024"
+                    ],
+                    "answer": "**Introduction to Signal Flow Graph**\nA signal flow graph is a graphical representation of a control system, used to analyze and design the system. It consists of nodes and branches that represent the variables and relationships between them.\n\n**Construction of Signal Flow Graph**\nThe signal flow graph is constructed by representing each variable as a node and drawing branches between the nodes to represent the relationships between the variables.\n\n**Mason's Gain Formula**\nMason's Gain Formula is used to find the overall gain of the system from the signal flow graph. The formula is:\nG = Σ (Pi Δi) / Δ\nwhere G is the overall gain, Pi is the gain of the ith path, Δi is the cofactor of the ith path, and Δ is the determinant of the graph.\n\n**Key Points of Signal Flow Graph**\n* Nodes represent variables\n* Branches represent relationships between variables\n* Mason's Gain Formula is used to find the overall gain\n* Signal flow graph is used to analyze and design control systems\n* It helps to identify the feedback loops and forward paths in the system\n\n**Advantages of Signal Flow Graph**\nThe signal flow graph is a powerful tool for analyzing and designing control systems. It helps to identify the relationships between variables and to find the overall gain of the system. The signal flow graph is also useful for identifying the feedback loops and forward paths in the system."
                 },
                 {
                     "id": "cse_1_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
+                    "question": "Compare open-loop & closed-loop systems. ",
+                    "frequency": 3,
+                    "exams": [
+                        "winter2022",
+                        "summer2024",
+                        "summer2025"
+                    ],
+                    "answer": "**Comparison of Open-Loop and Closed-Loop Systems**\n\nThe main difference between open-loop and closed-loop systems lies in their control mechanisms. \n* Open-loop systems do not have a feedback mechanism, whereas closed-loop systems have a feedback loop that helps in controlling the output.\n\n**Key Differences:**\n* Open-loop systems are simple and less expensive, but they are less accurate and more sensitive to disturbances.\n* Closed-loop systems are more complex and expensive, but they are more accurate and less sensitive to disturbances.\n* Open-loop systems are used in applications where precision is not critical, such as in simple lighting circuits.\n* Closed-loop systems are used in applications where precision is critical, such as in speed control of motors and in process control systems.\n\n**Comparison Points:**\n* Stability: Closed-loop systems are more stable than open-loop systems.\n* Accuracy: Closed-loop systems are more accurate than open-loop systems.\n* Sensitivity: Closed-loop systems are less sensitive to disturbances than open-loop systems.\n* Complexity: Closed-loop systems are more complex than open-loop systems.\n* Cost: Open-loop systems are less expensive than closed-loop systems.\n* Applications: Open-loop systems are used in simple applications, while closed-loop systems are used in complex applications."
                 },
                 {
                     "id": "cse_1_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
+                    "question": "Find the transfer function (T.F.) using Mason's Gain Formula.? ",
+                    "frequency": 1,
+                    "exams": [
+                        "summer2022"
+                    ],
+                    "answer": "**Introduction to Mason's Gain Formula**\nMason's Gain Formula is a method used to find the transfer function of a control system. The formula is used to calculate the overall gain of the system.\n\n**Mason's Gain Formula**\nThe formula is given by: \nT(s) = Σ (Pi Δi) / Δ \nwhere Pi is the gain of the ith forward path, and Δi is the determinant of the system with the ith forward path removed.\n\n**Steps to Find Transfer Function**\nTo find the transfer function using Mason's Gain Formula, follow these steps:\n* Identify all the forward paths in the system\n* Calculate the gain of each forward path\n* Calculate the determinant of the system with each forward path removed\n* Apply Mason's Gain Formula to calculate the overall transfer function\n\n**Key Points**\n* Mason's Gain Formula is a powerful tool for analyzing complex control systems\n* The formula can be used to calculate the transfer function of systems with multiple feedback loops\n* The formula is applicable to both continuous-time and discrete-time systems\n\n**Example Application**\nFor example, consider a system with two forward paths and one feedback loop. The gains of the forward paths are G1 and G2, and the gain of the feedback loop is H. The transfer function of the system can be calculated using Mason's Gain Formula as: \nT(s) = (G1 + G2) / (1 + G1H + G2H) \n\n**Conclusion**\nMason's Gain Formula is a useful tool for finding the transfer function of control systems. By following the steps outlined above, engineers can calculate the transfer function of complex systems and analyze their behavior."
                 },
                 {
                     "id": "cse_1_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
+                    "question": "What is the effect of feedback on the following? 1.System gain 2.System stability 3.System sensitivity 4.Noise or disturbance",
+                    "frequency": 1,
+                    "exams": [
+                        "summer2024"
+                    ],
+                    "answer": "**Effect of Feedback on Control Systems**\n\nThe effect of feedback on control systems can be analyzed in terms of its impact on system gain, stability, sensitivity, and noise or disturbance.\n\n* **System Gain**: Feedback reduces the overall gain of the system. This is because feedback subtracts a portion of the output from the input, thereby reducing the net input to the system.\n* **System Stability**: Feedback can either improve or degrade system stability, depending on the type of feedback used. Negative feedback generally improves stability, while positive feedback can lead to instability.\n* **System Sensitivity**: Feedback reduces the sensitivity of the system to parameter variations. This means that changes in system parameters, such as gain or time constants, have less effect on the system's behavior when feedback is present.\n* **Noise or Disturbance**: Feedback can help to reduce the effect of noise or disturbances on the system. By subtracting a portion of the output from the input, feedback can help to cancel out unwanted signals and improve the system's signal-to-noise ratio.\n\nKey points to note:\n* Negative feedback is commonly used to improve system stability and reduce sensitivity.\n* Positive feedback is used in certain applications, such as oscillators, where instability is desired.\n* Feedback can be used to improve system performance, but it can also introduce additional complexity and potential instability if not designed properly."
                 },
                 {
                     "id": "cse_1_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
+                    "question": "Compare an open-loop system with a feedback control system.?",
+                    "frequency": 1,
+                    "exams": [
+                        "winter2024"
+                    ],
+                    "answer": "**Introduction to Open-Loop and Feedback Control Systems**\nOpen-loop systems and feedback control systems are two types of control systems used in various engineering applications. \n\n**Key Differences**\nThe main differences between open-loop and feedback control systems are:\n* Open-loop systems do not have a feedback mechanism, whereas feedback control systems have a feedback loop that helps to correct errors.\n* Open-loop systems are simple and less expensive, but they are less accurate and reliable.\n* Feedback control systems are more complex and expensive, but they provide more accurate and reliable results.\n\n**Characteristics of Open-Loop Systems**\nSome key characteristics of open-loop systems include:\n* No feedback loop\n* Less accurate and reliable\n* Simple and less expensive\n* Used in applications where accuracy is not critical\n\n**Characteristics of Feedback Control Systems**\nSome key characteristics of feedback control systems include:\n* Feedback loop to correct errors\n* More accurate and reliable\n* More complex and expensive\n* Used in applications where accuracy and reliability are critical\n\n**Comparison Points**\nThe main comparison points between open-loop and feedback control systems are:\n* Accuracy and reliability\n* Complexity and cost\n* Feedback mechanism\n* Application areas\n* Stability and sensitivity\n* Speed of response \n\n**Conclusion**\nIn conclusion, open-loop systems are simple and less expensive, but they are less accurate and reliable. Feedback control systems, on the other hand, are more complex and expensive, but they provide more accurate and reliable results. The choice between an open-loop system and a feedback control system depends on the specific application and requirements."
                 },
                 {
                     "id": "cse_1_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
+                    "question": "Draw a generalized block diagram of a feedback control system & briefly describe its various components?",
+                    "frequency": 1,
+                    "exams": [
+                        "winter2024"
+                    ],
+                    "answer": "**Introduction to Feedback Control System**\nA feedback control system is a type of control system that uses feedback to control the output of a system. \n\n**Generalized Block Diagram**\nThe generalized block diagram of a feedback control system consists of the following components:\n* Input or reference signal\n* Control system\n* Plant or process\n* Sensor or measurement system\n* Feedback path\n\n**Description of Components**\nThe input or reference signal is the desired output of the system. The control system generates a control signal based on the input signal. The plant or process is the system being controlled. The sensor or measurement system measures the output of the plant and sends it to the control system through the feedback path.\n\n**Key Components and Their Functions**\n* The control system compares the input signal with the feedback signal and generates a control signal to the plant.\n* The plant or process responds to the control signal and produces an output.\n* The sensor or measurement system measures the output of the plant and sends it to the control system.\n* The feedback path allows the control system to adjust its output based on the actual output of the plant.\n\n**Importance of Feedback**\nThe feedback path is essential in a feedback control system as it allows the control system to adjust its output based on the actual output of the plant, thereby achieving the desired output."
                 },
                 {
                     "id": "cse_1_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
+                    "question": "Obtain the transfer function (T.F.) of an armature-controlled DC servomotor, clearly defining the terms in the equation & assumptions made?.",
+                    "frequency": 1,
+                    "exams": [
+                        "winter2024"
+                    ],
+                    "answer": "**Transfer Function of an Armature-Controlled DC Servomotor**\n\nThe transfer function of an armature-controlled DC servomotor can be obtained by considering the electrical and mechanical characteristics of the motor. \n\n**Assumptions:**\n* The armature inductance is negligible.\n* The motor is unsaturated.\n* The damping is negligible.\n\n**Terms in the Equation:**\n* V_a: Input voltage to the armature\n* I_a: Armature current\n* R_a: Armature resistance\n* K_b: Motor constant\n* J: Moment of inertia of the motor\n* B: Damping coefficient\n\n**Transfer Function:**\nThe transfer function of an armature-controlled DC servomotor is given by:\nG(s) = K_b / (R_a * J * s + R_a * B)\n\n**Key Points:**\n* The transfer function represents the relationship between the input voltage and the output angular displacement of the motor.\n* The motor constant K_b is a measure of the motor's ability to produce torque.\n* The moment of inertia J and damping coefficient B are mechanical characteristics of the motor.\n\n**Important Considerations:**\n* The transfer function is a simplified model of the motor's behavior and does not account for all the complexities of the system.\n* The assumptions made in deriving the transfer function should be validated for the specific application."
                 }
             ]
         },

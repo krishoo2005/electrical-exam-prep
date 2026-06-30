@@ -10,58 +10,58 @@
             "questions": [
                 {
                     "id": "sgt_1_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain the Intelligent Electronic Devices (IED) with their application.?",
+                    "frequency": 2,
+                    "exams": ["winter2024", "summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_1_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Illustrate the compressed Air used for renewable energy smart storage.",
+                    "frequency": 1,
+                    "exams": ["winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_1_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Write key challenges & policies related to smart grids in India",
+                    "frequency": 1,
+                    "exams": ["winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_1_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Illustrate the pumped hydro used for renewable energy smart storage.?",
+                    "frequency": 1,
+                    "exams": ["winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_1_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Write a short note on smart meter",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_1_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain AMR in detail.",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_1_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain Indian smart grid challenges.? ",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_1_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "What are the key challenges faced by Indian smart grid implementation? ",
+                    "frequency": 1,
+                    "exams": ["summer2025"],
                     "answer": ""
                 }
             ]
@@ -71,58 +71,58 @@
             "questions": [
                 {
                     "id": "sgt_2_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": " explain Architecture of smart grid with suitable layout diagram.?",
+                    "frequency": 2,
+                    "exams": ["summer2024","winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_2_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss specific challenges associated with integrating renewable energy sources into the smart grid.?",
+                    "frequency": 1,
+                    "exams": ["winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_2_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain A) Transmission automation in a smart grid.  B) Distribution automation in a smart grid",
+                    "frequency": 2,
+                    "exams": ["summer2023","summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_2_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": ")Explain how artificial intelligence techniques are being utilized in smart grid development.? ",
+                    "frequency": 1,
+                    "exams": ["summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_2_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "State & explain components of smart grid.? ",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_2_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain environmental impact on electric vehicle. ",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_2_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss the impact of smart grid on air pollutant emissions & reliability of power supply.? ",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_2_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Draw & explain a typical architecture of smart grid with its major components?",
+                    "frequency": 1,
+                    "exams": ["summer2025"],
                     "answer": ""
                 }
             ]
@@ -132,58 +132,58 @@
             "questions": [
                 {
                     "id": "sgt_3_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain working of microgrid with its benefits & drawbacks?. ",
+                    "frequency": 2,
+                    "exams": ["winter2024","summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_3_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss the environmental impact & climate change due to electrical power generation.? ",
+                    "frequency": 1,
+                    "exams": ["winter2024","summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_3_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Describe economic issues come under micro grids.? ",
+                    "frequency": 1,
+                    "exams": ["winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_3_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain in detail electric vehicles & plug-in hybrids contribution in micro grids.?",
+                    "frequency": 1,
+                    "exams": ["winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_3_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain operating modes of micro-grid with neat diagram.",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_3_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": " explain block diagram of EV?.",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_3_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Differentiate between series & parallel hybrid vehicles.?",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_3_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "What is Distributed Generation (DG)? Explain with advantages & limitations. ",
+                    "frequency": 1,
+                    "exams": ["summer2025"],
                     "answer": ""
                 }
             ]
@@ -193,58 +193,51 @@
             "questions": [
                 {
                     "id": "sgt_4_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain the role of IP-based systems & power line communications (PLC) in smart grid comm. networks?. ",
+                    "frequency": 3,
+                    "exams": ["winter2024","summer2024","summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_4_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": " the concept of a two-way digital communications paradigm in the context of smart grids with benefits.?",
+                    "frequency": 1,
+                    "exams": ["winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_4_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Illustrate principle of phasor measurement units (PMUs) with suitable diagram.? ",
+                    "frequency": 1,
+                    "exams": ["winter2024","summer2024","summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_4_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain the role of Advanced Metering Infrastructure (AMI) in comm. technology.? ",
+                    "frequency": 1,
+                    "exams": ["winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_4_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Write short note on Zigbee.?",
+                    "frequency": 1,
+                    "exams": ["summer2025"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_4_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain two-way digital comm. paradigm.? ",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_4_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
-                    "answer": ""
-                },
-                {
-                    "id": "sgt_4_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "What is Advanced Metering Infrastructure (AMI)? Explain its components? ",
+                    "frequency": 1,
+                    "exams": ["summer2025"],
                     "answer": ""
                 }
             ]
@@ -254,60 +247,68 @@
             "questions": [
                 {
                     "id": "sgt_5_1",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain the Load Frequency Control (LFC) & voltage control in micro grid system?. ",
+                    "frequency": 4,
+                    "exams": ["winter2024","summer2024","summer2023","summer2025"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_5_2",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss any one case study related to smart grid implementation.? ",
+                    "frequency": 1,
+                    "exams": ["winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_5_3",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Illustrate the biggest cybersecurity threats facing smart grids, & how can these threats be mitigated? ",
+                    "frequency": 1,
+                    "exams": ["winter2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_5_4",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss various cyber security security challenges in smart grid.?",
+                    "frequency": 1,
+                    "exams": ["summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_5_5",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Illustrate how the test beds are used for different case studies of smart grids.? ",
+                    "frequency": 1,
+                    "exams": ["summer2024"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_5_6",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Explain voltage control & active power control in micro-grid system",
+                    "frequency": 1,
+                    "exams": ["summer2023"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_5_7",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "Discuss cyber security challenges in smart grid & their potential consequences.?",
+                    "frequency": 1,
+                    "exams": ["summer2025"],
                     "answer": ""
                 },
                 {
                     "id": "sgt_5_8",
-                    "question": "",
-                    "frequency": 0,
-                    "exams": [],
+                    "question": "What are Load Altering Attacks & False Data Injection Attacks in smart grids? ",
+                    "frequency": 1,
+                    "exams": ["summer2025"],
                     "answer": ""
                 }
+                {
+                    "id": "sgt_5_9",
+                    "question": "write short note on 1. blutooth 2 .Zigbee  3 .gps 4.Wi-max",
+                    "frequency": 1,
+                    "exams": ["summer2025"],
+                    "answer": ""
+                }
+
             ]
         }
     ]
