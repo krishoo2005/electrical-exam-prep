@@ -90,7 +90,21 @@ gtag('config', 'G-8T35TNZ7LZ');
 
 </section>
 
+{% if code == "sgt" %}
 
+<div class="subject-update">
+
+    🚀 <strong>NEW UPDATE:</strong>
+
+    <strong>Infographic Notes</strong> are now available!
+
+    Learn High Priority Questions in just
+    <strong>2 Minutes</strong> using
+    Easy Handwritten Notes + Diagrams.
+
+</div>
+
+{% endif %}
 
 
 <body>
@@ -210,6 +224,27 @@ gtag('config', 'G-8T35TNZ7LZ');
 {% endif %}
 
     </div>
+    {% if code == "sgt" %}
+
+<a href="{{ data.infographic_url }}"
+   target="_blank"
+   class="resource-card">
+
+    <div class="resource-icon">
+        📝
+    </div>
+
+    <h3>🆕 Infographic Notes</h3>
+
+    <p>
+        Learn complete answers in just
+        <strong>2 Minutes</strong>.
+        Easy handwritten notes with diagrams.
+    </p>
+
+</a>
+
+{% endif %}
 
 </section>
 
